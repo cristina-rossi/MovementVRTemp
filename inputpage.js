@@ -1,3 +1,6 @@
+document.querySelector('#INPUT_PAGE_CONTENT').insertAdjacentHTML('beforeend', `     
+
+
 <div class="tab">
 		<button id="LINK_TAB_0" class="tablink" onclick="openTab('INPUT_TAB_0',this)">      <!-- Menu to open tabs  -->
 			Open Tab 0
@@ -45,3 +48,5 @@
 			Download
 		</button>
 	</div>
+
+  `);
