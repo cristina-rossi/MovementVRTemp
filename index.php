@@ -142,9 +142,9 @@
 	</div>
 	
 	<div id="INPUT_TAB_0" class="tabcontent">     <!-- TAB 0:  -->
-	       <?php
-		      include "testzero.html";
-		    ?>
+                                          
+	    <div id='testzero-div'></div>                                                 
+	    <script src='testzero.js'></script> 
 	</div>
 		
 	<div id="INPUT_TAB_1" class="tabcontent">     <!-- TAB 1:  -->
