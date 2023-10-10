@@ -15,13 +15,35 @@
 			font-family: Arial;
 			font-size: 15px;
 		} 
-		
-		/* Style of the overall container for the tabs and buttons   */
-		.overallcontainer{			
+
+		/* Style of the overall container for every page  */
+		.pagecontainer{			
 		  margin: auto;
 	          width: 95%;		
-    		  text-align: center;
+    		  text-align: left;
 		}
+
+		/* Style the tab (top row with buttons) */
+		.parenttab {
+		  overflow: hidden;
+		  border: none;
+		  background-color: none;	
+		  border-bottom: 3px solid #ccc;
+		}
+		
+		/* Style the buttons inside the tab (buttons to toggle windows) */
+		.parenttab button {
+		  background-color: inherit;
+		  float: right;
+		  border: none;
+		  outline: none;
+		  cursor: default;
+		  padding: 10px 30px;
+		  font-family: Arial;
+		  font-size: 12px;  
+		}
+		
+		
 		
 		/* Style the tab (top row with buttons) */
 		.tab {
@@ -69,6 +91,12 @@
 		} 
 
 
+		
+		/* Style of the overall container for download button  */
+		.buttoncontainer{	
+    		  text-align: center;
+		}
+		
 		/* Style of the "download" button underneath tabs */
 		.btn{			
 		  padding: 30px 30px;
@@ -82,7 +110,28 @@
 </head> 
 
 <body>
-	<div class="overallcontainer">
+
+	<!-- OVERALL TOP NAVIGATION MENU -->
+	<div class="parenttab">
+		<img src="https://thumbs.dreamstime.com/b/watercolor-bird-blue-jay-flying-hand-drawn-illustration-isolated-white-background-hand-painted-bluejay-watercolor-bird-blue-jay-184528842.jpg" width="50" height="50">
+		<button id="LINK_PAGE_INPUT" class="pagelink" onclick="openPage('INPUT_PAGE',this)">   
+			Create Input Files
+		</button>
+		<button id="LINK_PAGE_HOME" class="pagelink" onclick="openPage('HOME_PAGE',this)">
+			Home
+		</button>
+	</div>
+
+	
+	<!-- HOME PAGE -->
+	<div id="HOME_PAGE" class="pagecontainer">
+		<br><br>
+		Welcome to VR Motor Learning 
+	</div>
+	
+
+	<!-- PAGE FOR INPUT FILES CREATION -->
+	<div id="INPUT_PAGE" class="pagecontainer">
 	<div class="tab">
 		<button id="LINK_TAB_0" class="tablink" onclick="openTab('INPUT_TAB_0',this)">      <!-- Menu to open tabs  -->
 			Open Tab 0
@@ -157,14 +206,32 @@
 
 	<br><br>
 		
-	<button id="SUBMITBUTTON_0" class="btn" onclick="downloadCsv()">     <!-- GENERAL DOWNLOAD BUTTON:  -->
-		Download
-	</button>
+	<div class="buttoncontainer">
+		<button id="SUBMITBUTTON_0" class="btn" onclick="downloadCsv()">     <!-- GENERAL DOWNLOAD BUTTON:  -->
+			Download
+		</button>
+	</div>
 	</div>
 	
 		
 	
 	<script type="text/javascript">
+	
+		function openPage(selectedPageID,selectedPageLink) {
+			
+		  	allPages = document.getElementsByClassName("pagecontainer"); // initialized allPages variable			
+		  	for (i = 0; i < allPages.length; i++) {   // "closes" all the pages
+		    		allPages[i].style.display = "none";
+		  	}
+			document.getElementById(selectedPageID).style.display = "block";  // opens selected tab
+
+		  	allPageLinks = document.getElementsByClassName("pagelink");  			
+		  	for (i = 0; i < allPageLinks.length; i++) {   // resets page links font weight
+		    		allPageLinks[i].style.fontWeight = "normal";
+		  	}			
+			selectedPageLink.style.fontWeight = "bolder";
+			
+		}
 	
 		function openTab(selectedTabID,selectedTabLink) {
 			
@@ -215,6 +282,8 @@
 		
 		
 		document.getElementById("LINK_TAB_0").click();	
+		
+		document.getElementById("LINK_PAGE_HOME").click();	
 		
 	</script>
 		
