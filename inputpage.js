@@ -23,25 +23,6 @@
     		  text-align: left;
 		}
 
-		/* Style the tab (top row with buttons) */
-		.parenttab {
-		  overflow: hidden;
-		  border: none;
-		  background-color: none;	
-		  border-bottom: 3px solid #ccc;
-		}
-		
-		/* Style the buttons inside the tab (buttons to toggle windows) */
-		.parenttab button {
-		  background-color: inherit;
-		  float: right;
-		  border: none;
-		  outline: none;
-		  cursor: default;
-		  padding: 10px 30px;
-		  font-family: Arial;
-		  font-size: 12px;  
-		}
 		
 		
 		
