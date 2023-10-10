@@ -52,4 +52,4 @@ document.querySelector('#INPUT_PAGE_CONTENT').insertAdjacentHTML('beforeend', `
 
   `);
 
-require("./testzero");
+require("./testzero.js");
