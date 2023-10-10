@@ -1,3 +1,4 @@
+console.log("running input page script");
 document.querySelector('#INPUT_PAGE_CONTENT').insertAdjacentHTML('beforeend', `     
 
 
