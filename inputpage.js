@@ -14,7 +14,7 @@ document.querySelector('#INPUT_PAGE_CONTENT').insertAdjacentHTML('beforeend', `
 	<div id="INPUT_TAB_0" class="tabcontent">     <!-- TAB 0:  -->
 
 	    <div id='testzero-div'></div>                                                 
-	    <script src='testzero.js'></script> 
+	    <script src='testzero.js' defer></script> 
 	</div>
 
 	<div id="INPUT_TAB_1" class="tabcontent">     <!-- TAB 1:  -->
