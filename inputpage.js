@@ -52,4 +52,5 @@ document.querySelector('#INPUT_PAGE_CONTENT').insertAdjacentHTML('beforeend', `
 
   `);
 
-import "testzero.js";
+import { mainfun } from './testzero.js';
+mainfun();
