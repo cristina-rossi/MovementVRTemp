@@ -94,7 +94,7 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
   
 		.tabcontent blck {
   		display: inline-block;
-    		width: 40%;
+    		width: auto;
       		}
 		
 		/* Style for form inputs - text inputed by users in stirng or number places (not text areas) */
