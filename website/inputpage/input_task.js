@@ -6,7 +6,7 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
      		    <!-- SPATIAL VARIABLES -->
      		    <!-- plate position (wrt headset eye level) -->
 		    <div class="form-control">        <!-- numbers  -->
-			<strong>Plate Position [meters] &ensp </strong>
+			<strong>Plate Position [meters] &ensp; </strong>
    			<label for="PLATE_X">X:</label>
 			<input id="PLATE_X" name="setupScript,platePositionX" type="number" value="0" />
 			<label for="PLATE_Y">Y:</label>
