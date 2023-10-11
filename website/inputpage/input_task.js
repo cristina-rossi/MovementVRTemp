@@ -23,8 +23,6 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 			<input id="TARGET_Y" name="setupScript,targetLocalPositionY" type="number" value="0.3" />
 			<label for="TARGET_Z">Z:</label>
 			<input id="TARGET_Z" name="setupScript,targetLocalPositionZ" type="number" value="0" />
-   			<br>
-      			<i>(wrt headset position - eye level)</i> 
 		    </div>
       
      		    <!-- target collider size  -->
@@ -34,10 +32,17 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 			<label for="TARGETSIZE_Y">Y:</label>
 			<input id="TARGETSIZE_Y" name="setupScript,targetColliderSizeY" type="number" value="0.1" />
 			<label for="TARGETSIZE_Z">Z:</label>
-			<input id="TARGETSIZE_Z" name="setupScript,targetColliderSizeZ" type="number" value="0.1" />
-   			<br>
-      			<i>(wrt headset position - eye level)</i> 
+			<input id="TARGETSIZE_Z" name="setupScript,targetColliderSizeZ" type="number" value="0.1" />   
 		    </div>
+      
+     		    <!-- max plate tilt for success -->
+		    <div class="form-control">        <!-- numbers  -->
+			<strong>Max plate tilt at target [deg] &ensp </strong>
+			<label for="TARGETSIZE_X">X:</label>
+			<input id="TARGETSIZE_X" name="plateScript,maxTiltForSuccess" type="number" value="10" />
+		    </div>
+
+      
     
 		    <div class="form-control">        <!-- strings  -->
 			<label for="STRING_0">Insert A String:</label>
