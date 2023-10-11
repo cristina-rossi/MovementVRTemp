@@ -3,6 +3,7 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
     
 		<form>
 
+     		    <!-- SPATIAL VARIABLES -->
      		    <!-- plate position (wrt headset eye level) -->
 		    <div class="form-control">        <!-- numbers  -->
 			<strong>Plate Position [meters] &ensp </strong>
@@ -48,6 +49,13 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 			<input id="GAMEBOUNDS_POS" name="setupScript,gameareaSize" type="number" value="0.5" />
 			<label for="GAMEBOUNDS_THICK">Thickness:</label>
 			<input id="GAMEBOUNDS_THICK" name="setupScript,gameareaBoundThickness" type="number" value="0.01" />
+		    </div>
+
+      
+     		    <!--min amount that hands need to be below bottom of plate to begin trial -->
+		    <div class="form-control">        <!-- numbers  -->
+			<label for="HAND_POS_THRESH">Hand below plate threshold: [meters]</label>
+			<input id="HAND_POS_THRESH" name="setupScript,minHandPlateYDistanceTrialStart" type="number" value="0.01" />
 		    </div>
 
       
