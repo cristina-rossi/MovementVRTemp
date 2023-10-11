@@ -85,22 +85,28 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		}
 
 
-		.tabcontent block {
+		.tabcontent name {
+		font-weight: bold;
   		display: inline-block;
-    		width: auto;
+    		width: 300px;
+                padding-top: 40px;
                 padding-left: 40px;
-                padding-bottom: 40px;
+                padding-right: 40px;
+                padding-bottom: 0px;
       		}
 	
-		.tabcontent block name {
-		font-weight: bold;
+		.tabcontent inputs {
   		}
   
-		.tabcontent block note {
+		.tabcontent note {
 		font-size: 80%;
 		color: #2F4F4F;
   		font-style: italic;
-		display: block; }
+		display: block; 
+                padding-top: 10px;
+                padding-left: 40px;
+                padding-right: 40px;
+                padding-bottom: 0px;}
   
 		
 		/* Style for form inputs - text inputed by users in stirng or number places (not text areas) */
