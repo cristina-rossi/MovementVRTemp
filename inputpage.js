@@ -52,10 +52,10 @@ document.querySelector('#INPUT_PAGE_CONTENT').insertAdjacentHTML('beforeend', `
 
   `);
 
-document.querySelector('#TESTSCRIPT').insertAdjacentHTML('beforeend', ` 
+/*document.querySelector('#TESTSCRIPT').insertAdjacentHTML('beforeend', ` 
  <script src='testzero.js'></script> 
   `);
-
+*/
 /*import { mainfun } from './testzero.js';
 mainfun();
 */
