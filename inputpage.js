@@ -52,5 +52,6 @@ document.querySelector('#INPUT_PAGE_CONTENT').insertAdjacentHTML('beforeend', `
 
   `);
 
-import { mainfun } from './testzero.js';
+/*import { mainfun } from './testzero.js';
 mainfun();
+*/
