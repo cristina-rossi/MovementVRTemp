@@ -88,7 +88,7 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		font-size: 80%;
 		color: #2F4F4F;
 		letter-spacing: 1px;
-		line-height: 1;
+		line-height: 1/3;
 		font-weight: 100;
 		display: block; }
 		
