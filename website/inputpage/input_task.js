@@ -5,12 +5,27 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 
      		    <!-- plate position  -->
 		    <div class="form-control">        <!-- numbers  -->
-			<label for="PLATE_X">Plate Position X:</label>
-			<input id="PLATE_X" name="setupScript,platePositionX" type="number" value="-4.56" />
+			<strong>Plate Position [meters] &ensp </strong>
+   			<label for="PLATE_X">X:</label>
+			<input id="PLATE_X" name="setupScript,platePositionX" type="number" value="0" />
 			<label for="PLATE_Y">Y:</label>
-			<input id="PLATE_Y" name="setupScript,platePositionY" type="number" value="-4.56" />
+			<input id="PLATE_Y" name="setupScript,platePositionY" type="number" value="-0.3" />
 			<label for="PLATE_Z">Z:</label>
-			<input id="PLATE_Z" name="setupScript,platePositionZ" type="number" value="-4.56" />
+			<input id="PLATE_Z" name="setupScript,platePositionZ" type="number" value="0.4" />
+   			<br>
+      			<i>(wrt headset position - eye level)</i> 
+		    </div>
+      
+     		    <!-- target position  -->
+		    <div class="form-control">        <!-- numbers  -->
+			<label for="TARGET_X">Target Position X:</label>
+			<input id="TARGET_X" name="setupScript,targetPositionX" type="number" value="-4.56" />
+			<label for="TARGET_Y">Y:</label>
+			<input id="TARGET_Y" name="setupScript,platePositionY" type="number" value="-4.56" />
+			<label for="TARGET_Z">Z:</label>
+			<input id="TARGET_Z" name="setupScript,platePositionZ" type="number" value="-4.56" />
+   			<br>
+      			<i>(wrt headset position - eye level)</i> 
 		    </div>
     
 		    <div class="form-control">        <!-- strings  -->
