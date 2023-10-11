@@ -1,3 +1,53 @@
+
+
+function openTab(selectedTabID,selectedTabLink) {
+			
+		  	allTabs = document.getElementsByClassName("tabcontent"); // initialized allTabs variable			
+		  	for (i = 0; i < allTabs.length; i++) {   // "closes" all the tabs
+		    		allTabs[i].style.display = "none";
+		  	}
+			document.getElementById(selectedTabID).style.display = "block";  // opens selected tab
+
+		  	allTabLinks = document.getElementsByClassName("tablink");  			
+		  	for (i = 0; i < allTabLinks.length; i++) {   // resets tab link colors
+		    		allTabLinks[i].style.backgroundColor = 'Azure';
+		  	}			
+			selectedTabLink.style.backgroundColor = 'LightBlue';
+			
+		}
+
+		function downloadCsv(){
+
+
+			csvRows = [];
+		  	allFormPages = document.forms;
+			for (i = 0; i < allFormPages.length; i++) { 
+				myFormData = new FormData(allFormPages[i]);
+
+			
+			     	data = Object.fromEntries(myFormData.entries());
+	
+			
+				headers = Object.keys(data);	
+				values = Object.values(data);		
+				
+				for (j = 0; j < headers.length; j++) {
+					line = [ headers[j], values[j] ];		
+					csvRows.push(line.join(','));
+				}
+			}
+			
+			
+			csvdata = csvRows.join('\n');
+			blob = new Blob([csvdata], { type: 'text/csv' });
+			url = window.URL.createObjectURL(blob)
+			a = document.createElement('a')
+			a.setAttribute('href', url)
+			a.setAttribute('download', 'download.csv');
+			a.click()	
+		}
+
+
 document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `     
 	/*  here */
 		
@@ -87,3 +137,11 @@ document.querySelector('#INPUT_PAGE').insertAdjacentHTML('beforeend', `
 	</div>
 
   `);
+
+
+document.getElementsByClassName("tablink")[0].click();
+
+/* allTabL = document.getElementsByClassName("tablink");  
+allTabL[0].click(); */
+
+
