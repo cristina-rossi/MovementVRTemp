@@ -83,6 +83,13 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		  line-height: 3;
     		  text-align: left;
 		}
+
+		.tabcontent note {
+		font-size: 30%;
+		color: #888;
+		letter-spacing: 1px;
+		font-weight: 100;
+		display: block; }
 		
 		/* Style for form inputs - text inputed by users in stirng or number places (not text areas) */
 		input  { 
