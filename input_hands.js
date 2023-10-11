@@ -1,17 +1,8 @@
-
-console.log("running test zero script");
-const testzero = document.querySelector('#testzero-div');                          
-testzero.insertAdjacentHTML('beforeend', `                                      
-    
-    <!-- your HTML goes here -->                                                
-                                                                                
+document.querySelector('#INPUT_HANDS').insertAdjacentHTML('beforeend', `                                 
 
     
-		<form id="INPUT_FORM_0">
-
-	
-			
-			
+		<form>
+  
 		    <div class="form-control">        <!-- strings  -->
 			<label for="STRING_0">Insert A String:</label>
 			<input id="STRING_0" name="csvString" type="text" value="ciao some string" />
@@ -45,8 +36,6 @@ testzero.insertAdjacentHTML('beforeend', `
 		 
 		
 		</form> 
-
-
 
   `);
 
