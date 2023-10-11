@@ -13,8 +13,6 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 			<label for="PLATE_Z">Z:</label>
 			<input id="PLATE_Z" name="setupScript,platePositionZ" type="number" value="0.4" />
    			<note>(a wrt headset position - eye level)</note> 
-   			<br>
-      			<i>(wrt headset position - eye level)</i> 
 		    </div>
       
      		    <!-- target position  -->
@@ -25,6 +23,18 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 			<input id="TARGET_Y" name="setupScript,targetLocalPositionY" type="number" value="0.3" />
 			<label for="TARGET_Z">Z:</label>
 			<input id="TARGET_Z" name="setupScript,targetLocalPositionZ" type="number" value="0" />
+   			<br>
+      			<i>(wrt headset position - eye level)</i> 
+		    </div>
+      
+     		    <!-- target collider size  -->
+		    <div class="form-control">        <!-- numbers  -->
+			<label for="TARGETSIZE_X">X:</label>
+			<input id="TARGETSIZE_X" name="setupScript,targetColliderSizeX" type="number" value="0.1" />
+			<label for="TARGETSIZE_Y">Y:</label>
+			<input id="TARGETSIZE_Y" name="setupScript,targetColliderSizeY" type="number" value="0.1" />
+			<label for="TARGETSIZE_Z">Z:</label>
+			<input id="TARGETSIZE_Z" name="setupScript,targetColliderSizeZ" type="number" value="0.1" />
    			<br>
       			<i>(wrt headset position - eye level)</i> 
 		    </div>
