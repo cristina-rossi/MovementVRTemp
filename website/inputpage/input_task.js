@@ -12,18 +12,19 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 			<input id="PLATE_Y" name="setupScript,platePositionY" type="number" value="-0.3" />
 			<label for="PLATE_Z">Z:</label>
 			<input id="PLATE_Z" name="setupScript,platePositionZ" type="number" value="0.4" />
+   			<note>(a wrt headset position - eye level)</note> 
    			<br>
       			<i>(wrt headset position - eye level)</i> 
 		    </div>
       
      		    <!-- target position  -->
 		    <div class="form-control">        <!-- numbers  -->
-			<label for="TARGET_X">Target Position X:</label>
-			<input id="TARGET_X" name="setupScript,targetPositionX" type="number" value="-4.56" />
+			<label for="TARGET_X">X:</label>
+			<input id="TARGET_X" name="setupScript,targetLocalPositionX" type="number" value="0" />
 			<label for="TARGET_Y">Y:</label>
-			<input id="TARGET_Y" name="setupScript,platePositionY" type="number" value="-4.56" />
+			<input id="TARGET_Y" name="setupScript,targetLocalPositionY" type="number" value="0.3" />
 			<label for="TARGET_Z">Z:</label>
-			<input id="TARGET_Z" name="setupScript,platePositionZ" type="number" value="-4.56" />
+			<input id="TARGET_Z" name="setupScript,targetLocalPositionZ" type="number" value="0" />
    			<br>
       			<i>(wrt headset position - eye level)</i> 
 		    </div>
