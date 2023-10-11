@@ -7,7 +7,23 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
      		    <!-- plate position (wrt headset eye level) -->
       
 		    <div class="form-control">        <!-- numbers  -->
-			<name>Plate Position [meters] &ensp; </name>
+			<name>Plate Position [meters]</name>
+   			<inputs>
+   			<label for="PLATE_X">X:</label>
+			<input id="PLATE_X" name="setupScript,platePositionX" type="number" value="0" />
+			<label for="PLATE_Y">Y:</label>
+			<input id="PLATE_Y" name="setupScript,platePositionY" type="number" value="-0.3" />
+			<label for="PLATE_Z">Z:</label>
+			<input id="PLATE_Z" name="setupScript,platePositionZ" type="number" value="0.4" />
+
+   			</inputs>
+   
+   			<note>(a wrt headset position - eye level)</note> 
+      
+		    </div>
+      
+		    <div class="form-control">        <!-- numbers  -->
+			<name>Plate PositionPositionPositionPositionPosition [meters]</name>
    			<inputs>
    			<label for="PLATE_X">X:</label>
 			<input id="PLATE_X" name="setupScript,platePositionX" type="number" value="0" />
