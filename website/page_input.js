@@ -91,6 +91,11 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		line-height: 1/3;
 		font-weight: 100;
 		display: block; }
+  
+		.tabcontent blck {
+  		display: inline-block;
+    		width: 120px;
+      		}
 		
 		/* Style for form inputs - text inputed by users in stirng or number places (not text areas) */
 		input  { 
