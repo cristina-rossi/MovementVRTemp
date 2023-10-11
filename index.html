@@ -132,26 +132,17 @@
 
 	
 	<!-- HOME PAGE -->
-	<div id="HOME_PAGE" class="pagecontainer">
-		<br><br>
-		Welcome to VR Motor Learning !!
-	</div>
+	<div id="HOME_PAGE" class="pagecontainer"></div>	
+	<script src='page_home.js'></script>  
 	
 
 	<!-- PAGE FOR INPUT FILES CREATION -->
-	<div id="INPUT_PAGE" class="pagecontainer">
-
+	<div id="INPUT_PAGE" class="pagecontainer"></div>	
+	<script src='page_input.js'></script>  
+        <script src='input_task.js'></script>  
+        <script src='input_hands.js'></script>
 		
-	    <div id='INPUT_PAGE_CONTENT'></div>    
-
-		
-	
-	</div>
-	
-		
-	                                         
-	<script src='inputpage.js'></script> 
-        <script src='testzero.js'></script> 
+	                                        
 	<script type="text/javascript">
 	
 		function openPage(selectedPageID,selectedPageLink) {
@@ -218,7 +209,9 @@
 		}
 		
 		
-		document.getElementById("LINK_TAB_0").click();	
+		allTabL = document.getElementsByClassName("tablink");  
+		allTabL[0].click();
+		/* document.getElementById("LINK_INPUT_TASK").click();	*/
 		
 		document.getElementById("LINK_PAGE_HOME").click();	
 		console.log("running MAIN script");
