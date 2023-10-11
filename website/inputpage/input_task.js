@@ -2,7 +2,13 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 
     
 		<form>
-  
+
+     		    <!-- plate position  -->
+		    <div class="form-control">        <!-- numbers  -->
+			<label for="PLATE_X">Plate Position X:</label>
+			<input id="PLATE_X" name="setupScript,platePositionX" type="number" value="-4.56" />
+		    </div>
+    
 		    <div class="form-control">        <!-- strings  -->
 			<label for="STRING_0">Insert A String:</label>
 			<input id="STRING_0" name="csvString" type="text" value="ciao some string" />
