@@ -1,4 +1,4 @@
-function mainfun(){
+export function mainfun(){
 console.log("running test zero script");
 const testzero = document.querySelector('#testzero-div');                          
 testzero.insertAdjacentHTML('beforeend', `                                      
