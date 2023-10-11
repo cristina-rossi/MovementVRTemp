@@ -88,13 +88,15 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		font-size: 80%;
 		color: #2F4F4F;
 		letter-spacing: 1px;
-		line-height: 1/3;
 		font-weight: 100;
+  		font-style: italic;
 		display: block; }
   
 		.tabcontent blck {
   		display: inline-block;
     		width: auto;
+                padding-left: 40px;
+                padding-bottom: 40px;
       		}
 		
 		/* Style for form inputs - text inputed by users in stirng or number places (not text areas) */
