@@ -89,13 +89,17 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		font-weight: bold;
   		display: inline-block;
     		width: 300px;
-                padding-top: 40px;
-                padding-left: 40px;
-                padding-right: 40px;
+                padding-top: 15px;
+                padding-left: 10px;
+                padding-right: 10px;
                 padding-bottom: 0px;
       		}
 	
-		.tabcontent inputs {
+		.tabcontent label {
+                  padding-right: 3px;
+  		}
+
+  		.tabcontent inputs {
   		}
   
 		.tabcontent note {
@@ -103,9 +107,9 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		color: #2F4F4F;
   		font-style: italic;
 		display: block; 
-                padding-top: 10px;
-                padding-left: 40px;
-                padding-right: 40px;
+                padding-top: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
                 padding-bottom: 0px;}
   
 		
