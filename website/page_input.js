@@ -80,24 +80,28 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		  border-top: none;
 		  font-family: Arial;
 		  font-size: 15px; /* this is the font size for the non-input text within the form tabs */ 
-		  line-height: 3;
+		  line-height: 1;
     		  text-align: left;
 		}
 
-		.tabcontent note {
-		font-size: 80%;
-		color: #2F4F4F;
-		letter-spacing: 1px;
-		font-weight: 100;
-  		font-style: italic;
-		display: block; }
-  
-		.tabcontent blck {
+
+		.tabcontent block {
   		display: inline-block;
     		width: auto;
                 padding-left: 40px;
                 padding-bottom: 40px;
       		}
+	
+		.tabcontent block name {
+		font-weight: bold;
+  		}
+  
+		.tabcontent block note {
+		font-size: 80%;
+		color: #2F4F4F;
+  		font-style: italic;
+		display: block; }
+  
 		
 		/* Style for form inputs - text inputed by users in stirng or number places (not text areas) */
 		input  { 
