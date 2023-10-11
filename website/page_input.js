@@ -99,7 +99,7 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
   		}
   
 		.tabcontent note {
-		font-size: 80%;
+		font-size: 90%;
 		color: #2F4F4F;
   		font-style: italic;
 		display: block; 
