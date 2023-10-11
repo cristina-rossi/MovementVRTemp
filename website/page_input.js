@@ -85,7 +85,7 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		}
 
 		.tabcontent note {
-		font-size: 30%;
+		font-size: 80%;
 		color: #888;
 		letter-spacing: 1px;
 		font-weight: 100;
