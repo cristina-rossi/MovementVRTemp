@@ -1,14 +1,8 @@
-document.querySelector('#INPUT_TASK_CONTAINER').insertAdjacentHTML('beforeend', `                                      
-    
-    <!-- your HTML goes here -->                                                
-                                                                                
+document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `                                 
 
     
-		<form id="INPUT_FORM_0">
-
-	
-			
-			
+		<form>
+  
 		    <div class="form-control">        <!-- strings  -->
 			<label for="STRING_0">Insert A String:</label>
 			<input id="STRING_0" name="csvString" type="text" value="ciao some string" />
@@ -43,6 +37,5 @@ document.querySelector('#INPUT_TASK_CONTAINER').insertAdjacentHTML('beforeend', 
 		
 		</form> 
 
-
-
   `);
+
