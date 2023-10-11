@@ -3,7 +3,7 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
     
 		<form>
 
-     		    <!-- plate position  -->
+     		    <!-- plate position (wrt headset eye level) -->
 		    <div class="form-control">        <!-- numbers  -->
 			<strong>Plate Position [meters] &ensp </strong>
    			<label for="PLATE_X">X:</label>
@@ -15,7 +15,7 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
    			<note>(a wrt headset position - eye level)</note> 
 		    </div>
       
-     		    <!-- target position  -->
+     		    <!-- target position (wrt plate start position)  -->
 		    <div class="form-control">        <!-- numbers  -->
 			<label for="TARGET_X">X:</label>
 			<input id="TARGET_X" name="setupScript,targetLocalPositionX" type="number" value="0" />
@@ -35,11 +35,19 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 			<input id="TARGETSIZE_Z" name="setupScript,targetColliderSizeZ" type="number" value="0.1" />   
 		    </div>
       
-     		    <!-- max plate tilt for success -->
+     		    <!-- max plate tilt for success (deg), in Z -->
 		    <div class="form-control">        <!-- numbers  -->
 			<strong>Max plate tilt at target [deg] &ensp </strong>
-			<label for="TARGETSIZE_X">X:</label>
-			<input id="TARGETSIZE_X" name="plateScript,maxTiltForSuccess" type="number" value="10" />
+			<label for="MAXTILT_Z">Z:</label>
+			<input id="MAXTILT_Z" name="plateScript,maxTiltForSuccess" type="number" value="10" />
+		    </div>
+      
+     		    <!--size of game area beyond which plate falls (from plate initial position) -->
+		    <div class="form-control">        <!-- numbers  -->
+			<label for="GAMEBOUNDS_POS">Position (distance from plate/target):</label>
+			<input id="GAMEBOUNDS_POS" name="setupScript,gameareaSize" type="number" value="0.5" />
+			<label for="GAMEBOUNDS_THICK">Thickness:</label>
+			<input id="GAMEBOUNDS_THICK" name="setupScript,gameareaBoundThickness" type="number" value="0.01" />
 		    </div>
 
       
