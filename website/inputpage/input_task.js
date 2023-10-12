@@ -177,8 +177,8 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 		  <div class="form-control">            
 			<name>Time limit [seconds]:</name>
    			<inputs>
-   			<label for="STAGE4_TIME"></label>
 			<input id="STAGE4_TIME" name="trialScript,stage4_maxTime" type="number" value="35" />
+   			<label for="STAGE4_TIME"></label>
    			</inputs>      
 		   </div>
 
