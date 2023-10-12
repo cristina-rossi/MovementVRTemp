@@ -87,15 +87,15 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
   
 		.tabcontent inputcolumn{
   		  display: inline-block;
-    		  width: 70%;
+    		  width: 69%;
 		}
   
 		.tabcontent figurecolumn{
   		  display: inline-block;
-    		  width: 30%;
+    		  width: 29%;
 		}
   
-		.tabcontent inputdivider{
+		.tabcontent inputcolumn inputdivider{
   		  display: block;
     		  width: 100%;
 		  background-color: #E0FFFF;   
@@ -110,7 +110,7 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		}
 
 
-		.tabcontent name {
+		.tabcontent inputcolumn name {
 		font-weight: bold;
   		display: inline-block;
     		width: 40%;
@@ -124,11 +124,11 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
                   padding-right: 3px;
   		}
 
-  		.tabcontent inputs {
+  		.tabcontent inputcolumn inputs {
     		 width: 60%;
   		}
   
-		.tabcontent note {
+		.tabcontent inputcolumn note {
 		font-size: 90%;
 		color: #2F4F4F;
   		font-style: italic;
