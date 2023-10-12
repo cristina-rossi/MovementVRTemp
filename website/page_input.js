@@ -80,7 +80,7 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		  border-top: none;
 		  font-family: Arial;
 		  font-size: 15px; /* this is the font size for the non-input text within the form tabs */ 
-		  line-height: 0.5;
+		  line-height: 0.75;
     		  text-align: left;
 		}
   
@@ -97,10 +97,12 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		.tabcontent inputdivider{
   		  display: block;
     		  width: 100%;
-		  background-color: #F5FFFA;   
+		  background-color: #E0FFFF;   
     		  color: #191970;
 		  font-weight: bold;
-		  padding: 6px 12px;
+		  padding: 20px;
+    		  border-top: 10px;
+    		  border-bottom: 40px;
     		  font-size: 17px;
 	          text-align: center;
 			
