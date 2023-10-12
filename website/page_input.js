@@ -101,9 +101,9 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
     		  color: #191970;
 		  font-weight: bold;
 		  padding: 10px;
-    		  margin-top: 10px;
-    		  margin-bottom: 40px;
-    		  font-size: 17px;
+    		  margin-top: 15px;
+    		  margin-bottom: 10px;
+    		  font-size: 15px;
 	          text-align: center;
 			
 		}
@@ -141,7 +141,7 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		input  { 
 		  	font-family: Arial;
 			font-size: 15px; 
-   			width: 200px;
+   			width: 20px;
 		}
 		
 		/* Style for form "textarea" inputs - inputed by users */
