@@ -83,6 +83,7 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		  line-height: 0.75;
     		  text-align: left;
 		  width: 100%
+        	  vertical-align: top;
 		}
   
 		.tabcontent inputcolumn{
