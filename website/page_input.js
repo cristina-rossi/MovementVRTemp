@@ -118,9 +118,9 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
                 padding-right: 10px;
                 padding-bottom: 0px;
       		}
-		.tabcontent name::before {
-    		  content: '<br/>';
-		  white-space: pre;
+		.tabcontent name::before { 
+  		content: ' '; 
+    		display: block; 
 		}
 	
 		.tabcontent label {
