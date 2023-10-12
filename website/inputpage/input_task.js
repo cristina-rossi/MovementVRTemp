@@ -57,7 +57,7 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
    		  <note>Plate appears at this position:</note> 
      		    <!-- plate position (wrt headset eye level) -->      
 		    <div class="form-control">        <!-- numbers  -->
-			<name>Plate Position [meters]</name>
+			<name>Plate position [meters]</name>
    			<inputs>
    			<label for="PLATE_X">X:</label>
 			<input id="PLATE_X" name="setupScript,platePositionX" type="number" value="0" />
@@ -70,9 +70,10 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
      
   		<!-- Stage 3 -->
     		  <inputdivider> Stage 3: make contact with plate </inputdivider>
-   		  <note>Plate active and visible - waits & detects contact between hands and plate</note> 
+   		  <note>Plate active and visible - waits & detects contact between hands and plate.</note> 
+   		  <note>Skips to next trial (failure) if nothing happens after time limit: </note> 
 		  <div class="form-control">        
-			<name>Time limit (past which trial is skipped) [seconds]:</name>
+			<name>Time limit [seconds]:</name>
    			<inputs>
    			<label for="STAGE3_TIME"></label>
 			<input id="STAGE3_TIME" name="trialScript,stage3_maxTime" type="number" value="30" />
