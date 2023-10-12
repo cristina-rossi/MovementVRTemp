@@ -129,7 +129,7 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 	
 		.tabcontent inputcolumn name:before
 		{
-		    content: " \A";
+		    content: "";
 		    display: block;  
 		}
 	
