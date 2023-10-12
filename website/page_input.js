@@ -111,7 +111,7 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 
 		.tabcontent name {
 		font-weight: bold;
-  		display: inline-block;
+  		display: block;
     		width: 300px;
                 padding-top: 15px;
                 padding-left: 10px;
