@@ -180,6 +180,14 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 		   </div>
 
 
+	</inputcolumn>
+ 
+	<figurecolumn>
+   		<img src="website/inputpage/paradigm.jpg"  style="width:100%">
+	</figurecolumn>
+
+ 
+	</form>
 
      
   
