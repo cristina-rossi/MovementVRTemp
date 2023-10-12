@@ -183,8 +183,7 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 		   </div>
 
 
-	</inputcolumn>
- 
+	</inputcolumn> 
 	<figurecolumn>
    		<span> ciao </span>
   		<!--  	<img src="website/inputpage/paradigmSmall-01.png"  style="width:100%">-->
