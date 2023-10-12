@@ -44,11 +44,97 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 			<name>Time (outside of region)... [seconds]</name>
    			<inputs>
    			<label for="OFFLIMITS_TIME_ACTIVATEPLATE">to activate plate (invisible):</label>
-			<input id="OFFLIMITS_TIME_ACTIVATEPLATE" name="trialScript,stage2_handsRepositionedActivateTime" type="number" value="2" />
-   			<label for="OFFLIMITS_TIME_TOT">to proceed to next stage:</label>
-			<input id="OFFLIMITS_TIME_TOT" name="trialScript,stage2_handsRepositionedTotalTime" type="number" value="2" />
+			<input id="OFFLIMITS_TIME_ACTIVATEPLATE" name="trialScript,stage2_handsRepositionedActivateTime" type="number" value="0.05" />
+   			<label for="OFFLIMITS_TIME_TOT">to proceed to next stage (plate visible):</label>
+			<input id="OFFLIMITS_TIME_TOT" name="trialScript,stage2_handsRepositionedTotalTime" type="number" value="0.1" />
    			</inputs>
 		   </div>
+
+     
+  		<!-- Stage 3 -->
+    		  <inputdivider> Stage 3: make contact with plate </inputdivider>
+   		  <note>Plate active and visible - waits & detects contact between hands and plate</note> 
+		  <div class="form-control">        
+			<name>Time limit (past which trial is skipped) [seconds]:</name>
+   			<inputs>
+   			<label for="STAGE3_TIME"></label>
+			<input id="STAGE3_TIME" name="trialScript,stage3_maxTime" type="number" value="30" />
+   			</inputs>      
+		   </div>
+
+     
+  		<!-- Stage 4 -->
+    		  <inputdivider> Stage 4: moving the plate to the target </inputdivider>	
+		  <name>Success criteria:</name><br>
+      
+     		    <!-- target position (wrt headset eye center)  -->
+		    <div class="form-control">        <!-- numbers  -->
+			<label for="TARGET_X">X:</label>
+			<input id="TARGET_X" name="setupScript,targetPositionX" type="number" value="0" />
+			<label for="TARGET_Y">Y:</label>
+			<input id="TARGET_Y" name="setupScript,targetPositionY" type="number" value="0" />
+			<label for="TARGET_Z">Z:</label>
+			<input id="TARGET_Z" name="setupScript,targetPositionZ" type="number" value="0.4" />
+		    </div>
+      
+     		    <!-- target collider size  -->
+		    <div class="form-control">        <!-- numbers  -->
+			<label for="TARGETSIZE_X">X:</label>
+			<input id="TARGETSIZE_X" name="setupScript,targetColliderSizeX" type="number" value="0.1" />
+			<label for="TARGETSIZE_Y">Y:</label>
+			<input id="TARGETSIZE_Y" name="setupScript,targetColliderSizeY" type="number" value="0.1" />
+			<label for="TARGETSIZE_Z">Z:</label>
+			<input id="TARGETSIZE_Z" name="setupScript,targetColliderSizeZ" type="number" value="0.1" />   
+		    </div>
+      
+     		    <!-- max plate tilt for success (deg), in Z -->
+		    <div class="form-control">        <!-- numbers  -->
+			<strong>Max plate tilt at target [deg] &ensp </strong>
+			<label for="MAXTILT_Z">Z:</label>
+			<input id="MAXTILT_Z" name="plateScript,maxTiltForSuccess" type="number" value="10" />
+		    </div>
+      
+
+    
+		  <div class="form-control">        
+			<name>Off-limits region center [meters]</name>
+   			<inputs>
+   			<label for="OFFLIMITS_POS_X">X:</label>
+			<input id="OFFLIMITS_POS_X" name="setupScript,stage2_offlimitsPositionX" type="number" value="0" />
+			<label for="OFFLIMITS_POS_Y">Y:</label>
+			<input id="OFFLIMITS_POS_Y" name="setupScript,stage2_offlimitsPositionY" type="number" value="0" />
+			<label for="OFFLIMITS_POS_Z">Z:</label>
+			<input id="OFFLIMITS_POS_Z" name="setupScript,stage2_offlimitsPositionZ" type="number" value="0.4" />
+   			</inputs>       
+			<name>Off-limits region size [meters]</name>
+   			<inputs>
+   			<label for="OFFLIMITS_SIZE_X">X:</label>
+			<input id="OFFLIMITS_SIZE_X" name="setupScript,tage2_offlimitsPositionX" type="number" value="2" />
+			<label for="OFFLIMITS_SIZE_Y">Y:</label>
+			<input id="OFFLIMITS_SIZE_Y" name="setupScript,tage2_offlimitsPositionY" type="number" value="0.62" />
+			<label for="OFFLIMITS_SIZE_Z">Z:</label>
+			<input id="OFFLIMITS_SIZE_Z" name="setupScript,tage2_offlimitsPositionZ" type="number" value="2" />
+   			</inputs>     
+			<name>Time (outside of region)... [seconds]</name>
+   			<inputs>
+   			<label for="OFFLIMITS_TIME_ACTIVATEPLATE">to activate plate (invisible):</label>
+			<input id="OFFLIMITS_TIME_ACTIVATEPLATE" name="trialScript,stage2_handsRepositionedActivateTime" type="number" value="0.05" />
+   			<label for="OFFLIMITS_TIME_TOT">to proceed to next stage (plate visible):</label>
+			<input id="OFFLIMITS_TIME_TOT" name="trialScript,stage2_handsRepositionedTotalTime" type="number" value="0.1" />
+   			</inputs>
+		   </div>
+
+		  <div class="form-control">        
+			<name>Time limit (past which trial is skipped) [seconds]:</name>
+   			<inputs>
+   			<label for="STAGE4_TIME"></label>
+			<input id="STAGE4_TIME" name="trialScript,stage4_maxTime" type="number" value="35" />
+   			</inputs>      
+		   </div>
+
+
+
+     
   
      		    <!-- SPATIAL VARIABLES -->
      		    <!-- plate position (wrt headset eye level) -->
@@ -67,34 +153,6 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
    
    			<note>(a wrt headset position - eye level)</note> 
       
-		    </div>
-      
-      
-     		    <!-- target position (wrt plate start position)  -->
-		    <div class="form-control">        <!-- numbers  -->
-			<label for="TARGET_X">X:</label>
-			<input id="TARGET_X" name="setupScript,targetLocalPositionX" type="number" value="0" />
-			<label for="TARGET_Y">Y:</label>
-			<input id="TARGET_Y" name="setupScript,targetLocalPositionY" type="number" value="0.3" />
-			<label for="TARGET_Z">Z:</label>
-			<input id="TARGET_Z" name="setupScript,targetLocalPositionZ" type="number" value="0" />
-		    </div>
-      
-     		    <!-- target collider size  -->
-		    <div class="form-control">        <!-- numbers  -->
-			<label for="TARGETSIZE_X">X:</label>
-			<input id="TARGETSIZE_X" name="setupScript,targetColliderSizeX" type="number" value="0.1" />
-			<label for="TARGETSIZE_Y">Y:</label>
-			<input id="TARGETSIZE_Y" name="setupScript,targetColliderSizeY" type="number" value="0.1" />
-			<label for="TARGETSIZE_Z">Z:</label>
-			<input id="TARGETSIZE_Z" name="setupScript,targetColliderSizeZ" type="number" value="0.1" />   
-		    </div>
-      
-     		    <!-- max plate tilt for success (deg), in Z -->
-		    <div class="form-control">        <!-- numbers  -->
-			<strong>Max plate tilt at target [deg] &ensp </strong>
-			<label for="MAXTILT_Z">Z:</label>
-			<input id="MAXTILT_Z" name="plateScript,maxTiltForSuccess" type="number" value="10" />
 		    </div>
       
      		    <!--size of game area beyond which plate falls (from plate initial position) -->
