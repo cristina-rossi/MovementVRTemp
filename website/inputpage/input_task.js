@@ -167,7 +167,7 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
    			<inputs>	    
 			<input id="GAMEAREA_BOTTOMAUTO_H" name="setupScript,gameareaBottomIsGround" type="hidden" value="FALSE">
 			<input id="GAMEAREA_BOTTOMAUTO" name="setupScript,gameareaBottomIsGround" type="checkbox" value="TRUE" checked>
-			<label for="GAMEAREA_BOTTOMAUTO">Make gamearea bottom equal to ground:</label>		
+			<label for="GAMEAREA_BOTTOMAUTO">Make gamearea bottom equal to ground</label>		
    			</inputs>   
 		   </div>  
      
