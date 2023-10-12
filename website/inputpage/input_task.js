@@ -163,13 +163,11 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 			<input id="GAMEAREA_SIZE_Z" name="setupScript,gameareaSizeX" type="number" value="1" />
    			</inputs>     
 
-   			<inputs>
-			<label for="GAMEAREA_BOTTOMAUTO">Make gamearea bottom equal to ground:</label>			    
-			<input id="GAMEAREA_BOTTOMAUTO_H" name="setupScript,gameareaBottomIsGround" type="hidden" value="FALSE">
-   			</inputs>   
 			<name> </name>  
-   			<inputs>
+   			<inputs>	    
+			<input id="GAMEAREA_BOTTOMAUTO_H" name="setupScript,gameareaBottomIsGround" type="hidden" value="FALSE">
 			<input id="GAMEAREA_BOTTOMAUTO" name="setupScript,gameareaBottomIsGround" type="checkbox" value="TRUE" checked>
+			<label for="GAMEAREA_BOTTOMAUTO">Make gamearea bottom equal to ground:</label>		
    			</inputs>   
 		   </div>  
      
