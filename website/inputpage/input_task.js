@@ -183,7 +183,7 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 	</inputcolumn>
  
 	<figurecolumn>
-   		<img src="website/inputpage/paradigm.jpg"  style="width:100%">
+   		<img src="website/inputpage/paradigm.png"  style="width:100%">
 	</figurecolumn>
 
  
