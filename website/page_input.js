@@ -111,13 +111,17 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 
 		.tabcontent name {
 		font-weight: bold;
-  		display: block;
+  		display: inline-block;
     		width: 300px;
                 padding-top: 15px;
                 padding-left: 10px;
                 padding-right: 10px;
                 padding-bottom: 0px;
       		}
+		.tabcontent name::before {
+		  content: "\A";
+		  white-space: pre;
+		}
 	
 		.tabcontent label {
                   padding-right: 3px;
