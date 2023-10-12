@@ -127,6 +127,7 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 	
 		.tabcontent label {
                   padding-right: 3px;
+      		  padding-left:10px;
   		}
 
   		.tabcontent inputcolumn inputs {
@@ -149,8 +150,9 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		  	font-family: Arial;
 			font-size: 15px; 
    			width: 60px;
-      			padding-right:10px;
 		}
+  		input[type=text] {
+    		}
 		
 		/* Style for form "textarea" inputs - inputed by users */
 		textarea{
