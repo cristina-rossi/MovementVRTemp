@@ -104,7 +104,8 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		  background-color: #E0FFFF;   
     		  color: #191970;
 		  font-weight: bold;
-		  padding: 10px;
+		  padding-top: 10px;		  
+    		  padding-bottom: 10px;
     		  margin-top: 15px;
     		  margin-bottom: 10px;
     		  font-size: 15px;
