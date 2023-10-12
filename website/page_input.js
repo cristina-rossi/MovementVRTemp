@@ -88,11 +88,13 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		.tabcontent inputcolumn{
   		  display: inline-block;
     		  width: 69%;
+		  border: 1px solid #90EE90;
 		}
   
 		.tabcontent figurecolumn{
   		  display: inline-block;
     		  width: 29%;
+		  border: 1px solid #20B2AA;
 		}
   
 		.tabcontent inputcolumn inputdivider{
