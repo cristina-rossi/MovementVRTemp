@@ -127,7 +127,7 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		  border: 1px solid #90EE90;
       		} 
 	
-		.tabcontent inputcolumn name :before
+		.tabcontent inputcolumn name:before
 		{
 		    content: '\00000a';
 		    display: block;  
@@ -139,8 +139,10 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
   		}
 
   		.tabcontent inputcolumn inputs {
+  		display: inline-block;
     		 width: 70%;
 		  border: 1px solid #90EE90;
+    
   		}
   
 		.tabcontent inputcolumn note {
