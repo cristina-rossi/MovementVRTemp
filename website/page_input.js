@@ -127,6 +127,12 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		  border: 1px solid #90EE90;
       		} 
 	
+		.tabcontent inputcolumn name:before
+		{
+		    content: " \A";
+		    display: block;  
+		}
+	
 	
 		.tabcontent label {
                   padding-right: 3px;
