@@ -118,11 +118,7 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
                 padding-left: 10px;
                 padding-right: 10px;
                 padding-bottom: 0px;
-      		}
-		.tabcontent name::before { 
-  		content: ' '; 
-    		display: block; 
-		}
+      		} 
 	
 		.tabcontent label {
                   padding-right: 3px;
