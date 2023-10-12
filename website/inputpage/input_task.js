@@ -166,13 +166,16 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
    			<inputs>
 			<label for="GAMEAREA_BOTTOMAUTO">Make gamearea bottom equal to ground:</label>			    
 			<input id="GAMEAREA_BOTTOMAUTO_H" name="setupScript,gameareaBottomIsGround" type="hidden" value="FALSE">
+   			</inputs>   
+			<name> </name>  
+   			<inputs>
 			<input id="GAMEAREA_BOTTOMAUTO" name="setupScript,gameareaBottomIsGround" type="checkbox" value="TRUE" checked>
-   			</inputs>     
+   			</inputs>   
 		   </div>  
      
-      		  <note>After time limit (past which trial is skipped) [seconds]:</note> 
-
-		  <div class="form-control">        
+      		  <note>After time limit, past which trial is skipped:</note> 
+		  <div class="form-control">            
+			<name>Time limit [seconds]:</name>
    			<inputs>
    			<label for="STAGE4_TIME"></label>
 			<input id="STAGE4_TIME" name="trialScript,stage4_maxTime" type="number" value="35" />
