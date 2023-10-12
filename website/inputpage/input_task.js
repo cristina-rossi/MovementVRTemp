@@ -20,7 +20,7 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
    		  <note>Only present in selected trials - defined in "Phases" tab </note> 
     		
   		<!-- Stage 2 -->
-    		  <inputdivider> Stage 2: reposition hands </inputdivider>
+    		  <inputdivider> Stage 2: reposition hands to enable plate </inputdivider>
    		  <note>No plate yet. Waits for hands to outside of off-limits region (where plate will appear) to proceed.</note> 
 		  <div class="form-control">        
 			<name>Off-limits region center [meters]</name>
@@ -49,7 +49,20 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 			<input id="OFFLIMITS_TIME_TOT" name="trialScript,stage2_handsRepositionedTotalTime" type="number" value="0.1" />
    			</inputs>
 		   </div>
-
+     
+   		  <note>Plate appears at this position:</note> 
+     		    <!-- plate position (wrt headset eye level) -->      
+		    <div class="form-control">        <!-- numbers  -->
+			<name>Plate Position [meters]</name>
+   			<inputs>
+   			<label for="PLATE_X">X:</label>
+			<input id="PLATE_X" name="setupScript,platePositionX" type="number" value="0" />
+			<label for="PLATE_Y">Y:</label>
+			<input id="PLATE_Y" name="setupScript,platePositionY" type="number" value="-0.3" />
+			<label for="PLATE_Z">Z:</label>
+			<input id="PLATE_Z" name="setupScript,platePositionZ" type="number" value="0.4" />
+   			</inputs>
+		    </div>
      
   		<!-- Stage 3 -->
     		  <inputdivider> Stage 3: make contact with plate </inputdivider>
@@ -145,17 +158,17 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 			<label for="GAMEAREA_SIZE_Z">Z:</label>
 			<input id="GAMEAREA_SIZE_Z" name="setupScript,gameareaSizeX" type="number" value="1" />
    			</inputs>     
-			<name>Time (outside of region)... [seconds]</name>
+
    			<inputs>
-   			<label for="OFFLIMITS_TIME_ACTIVATEPLATE">to activate plate (invisible):</label>
-			<input id="OFFLIMITS_TIME_ACTIVATEPLATE" name="trialScript,stage2_handsRepositionedActivateTime" type="number" value="0.05" />
-   			<label for="OFFLIMITS_TIME_TOT">to proceed to next stage (plate visible):</label>
-			<input id="OFFLIMITS_TIME_TOT" name="trialScript,stage2_handsRepositionedTotalTime" type="number" value="0.1" />
-   			</inputs>
-		   </div>
+			<label for="GAMEAREA_BOTTOMAUTO">Make gamearea bottom equal to ground:</label>			    
+			<input id="GAMEAREA_BOTTOMAUTO_H" name="setupScript,gameareaBottomIsGround" type="hidden" value="FALSE">
+			<input id="GAMEAREA_BOTTOMAUTO" name="setupScript,gameareaBottomIsGround" type="checkbox" value="TRUE" checked>
+   			</inputs>     
+		   </div>  
+     
+      		  <note>After time limit (past which trial is skipped) [seconds]:</note> 
 
 		  <div class="form-control">        
-			<name>Time limit (past which trial is skipped) [seconds]:</name>
    			<inputs>
    			<label for="STAGE4_TIME"></label>
 			<input id="STAGE4_TIME" name="trialScript,stage4_maxTime" type="number" value="35" />
@@ -166,75 +179,7 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 
      
   
-     		    <!-- SPATIAL VARIABLES -->
-     		    <!-- plate position (wrt headset eye level) -->
       
-		    <div class="form-control">        <!-- numbers  -->
-			<name>Plate Position [meters]</name>
-   			<inputs>
-   			<label for="PLATE_X">X:</label>
-			<input id="PLATE_X" name="setupScript,platePositionX" type="number" value="0" />
-			<label for="PLATE_Y">Y:</label>
-			<input id="PLATE_Y" name="setupScript,platePositionY" type="number" value="-0.3" />
-			<label for="PLATE_Z">Z:</label>
-			<input id="PLATE_Z" name="setupScript,platePositionZ" type="number" value="0.4" />
-
-   			</inputs>
-   
-   			<note>(a wrt headset position - eye level)</note> 
-      
-		    </div>
-      
-     		    <!--size of game area beyond which plate falls (from plate initial position) -->
-		    <div class="form-control">        <!-- numbers  -->
-			<label for="GAMEBOUNDS_POS">Position (distance from plate/target):</label>
-			<input id="GAMEBOUNDS_POS" name="setupScript,gameareaSize" type="number" value="0.5" />
-			<label for="GAMEBOUNDS_THICK">Thickness:</label>
-			<input id="GAMEBOUNDS_THICK" name="setupScript,gameareaBoundThickness" type="number" value="0.01" />
-		    </div>
-
-      
-     		    <!--min amount that hands need to be below bottom of plate to begin trial -->
-		    <div class="form-control">        <!-- numbers  -->
-			<label for="HAND_POS_THRESH">Hand below plate threshold: [meters]</label>
-			<input id="HAND_POS_THRESH" name="setupScript,minHandPlateYDistanceTrialStart" type="number" value="0.01" />
-		    </div>
-
-      
-    
-		    <div class="form-control">        <!-- strings  -->
-			<label for="STRING_0">Insert A String:</label>
-			<input id="STRING_0" name="csvString" type="text" value="ciao some string" />
-		    </div>
-		
-		    <div class="form-control">        <!-- numbers  -->
-			<label for="NUMBER_0">Insert A Number:</label>
-			<input id="NUMBER_0" name="csvNumber" type="number" value="-4.56" />
-		    </div>
-		
-		    <div class="form-control">        <!-- longer strings???  -->
-			<label for="LONGTEXT_0">Enter a Message</label>
-			<textarea id="LONGTEXT_0" name="csvLongText" rows="6" cols="65"></textarea>
-		    </div>
-		
-		    <div class="form-control">        <!-- logical  -->
-			<label for="LOGICAL_0">Check the logical box:</label>			    
-			<input id="LOGICAL_0H" name="csvLogical" type="hidden" value="wasNotChecked">
-			<input id="LOGICAL_0" name="csvLogical" type="checkbox" value="wasChecked" checked>
-		    </div>
-
-		    <div class="form-control">        <!-- multiple choice, radio buttons  -->
-			Language Choice: &nbsp;&nbsp;
-			<input id="MULTIPLECHOICE_0_A" name="csvMultiplechoice0" type="radio" value="selectedA">
-			<label for="MULTIPLECHOICE_0_A">Choice A</label> &nbsp;&nbsp;&nbsp;&nbsp; 
-			<input id="MULTIPLECHOICE_0_B" name="csvMultiplechoice0" type="radio" value="selectedB"  checked>
-			<label for="MULTIPLECHOICE_0_B">Choice B   </label> &nbsp;&nbsp;&nbsp;&nbsp; 
-			<input id="MULTIPLECHOICE_0_C" name="csvMultiplechoice0" type="radio" value="selectedC">
-			<label for="MULTIPLECHOICE_0_C">Choice C   </label>
-		    </div>		
-		 
-		
-		</form> 
 
   `);
 
