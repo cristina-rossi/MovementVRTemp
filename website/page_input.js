@@ -119,7 +119,7 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
                 padding-bottom: 0px;
       		}
 		.tabcontent name::before {
-		  content: "\A";
+		  content: "\";
 		  white-space: pre;
 		}
 	
