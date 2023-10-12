@@ -21,8 +21,8 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
     		
   		<!-- Stage 2 -->
     		  <inputdivider> Stage 2: reposition hands to enable plate </inputdivider>
-   		  <note>No plate yet. Waits for hands to outside of off-limits region (where plate will appear) to proceed.</note> 
-		  <div class="form-control">        
+		  <div class="form-control">           
+   		  	<note>No plate yet. Waits for hands to outside of off-limits region: </note> 
 			<name>Off-limits region center [meters]</name>
    			<inputs>
    			<label for="OFFLIMITS_POS_X">X:</label>
@@ -40,11 +40,15 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 			<input id="OFFLIMITS_SIZE_Y" name="setupScript,stage2_offlimitsPositionY" type="number" value="0.62" />
 			<label for="OFFLIMITS_SIZE_Z">Z:</label>
 			<input id="OFFLIMITS_SIZE_Z" name="setupScript,stage2_offlimitsPositionZ" type="number" value="2" />
-   			</inputs>     
-			<name>Time (outside of region)... [seconds]</name>
+   			</inputs>           
+   		  	<note>Proceeds after hands are outside of region for a certain time delay: </note> 
+			<name>Time to plate activation [seconds]:</name>
    			<inputs>
    			<label for="OFFLIMITS_TIME_ACTIVATEPLATE">to activate plate (invisible):</label>
 			<input id="OFFLIMITS_TIME_ACTIVATEPLATE" name="trialScript,stage2_handsRepositionedActivateTime" type="number" value="0.05" />
+   			</inputs>
+			<name>Time to next stage [seconds]:</name>
+   			<inputs>
    			<label for="OFFLIMITS_TIME_TOT">to proceed to next stage (plate visible):</label>
 			<input id="OFFLIMITS_TIME_TOT" name="trialScript,stage2_handsRepositionedTotalTime" type="number" value="0.1" />
    			</inputs>
