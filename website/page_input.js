@@ -86,12 +86,12 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
   
 		.tabcontent inputcolumn{
   		  display: inline-block;
-    		  width: 75%;
+    		  width: 70%;
 		}
   
 		.tabcontent figurecolumn{
   		  display: inline-block;
-    		  width: 25%;
+    		  width: 30%;
 		}
   
 		.tabcontent inputdivider{
@@ -100,9 +100,9 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		  background-color: #E0FFFF;   
     		  color: #191970;
 		  font-weight: bold;
-		  padding: 20px;
-    		  border-top: 10px;
-    		  border-bottom: 40px;
+		  padding: 10px;
+    		  margin-top: 10px;
+    		  margin-bottom: 40px;
     		  font-size: 17px;
 	          text-align: center;
 			
