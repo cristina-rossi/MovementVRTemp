@@ -76,9 +76,8 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 		   </div>
 
      
-  		<!-- Stage 4 -->
-    		  <inputdivider> Stage 4: moving the plate to the target </inputdivider>	
-		  <name>Success criteria:</name><br>      
+  		<!-- Stage 4 SUCCESS-->
+    		  <inputdivider> Stage 4: moving the plate to the target - Success criteria</inputdivider>	
    		  <note>For a success, plate must reach "target position":</note> 
       
      		    <!-- target position (wrt headset eye center)  -->
@@ -132,7 +131,7 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 			</inputs>
 		    </div>
 	 
-		  <name>Failure criteria:</name><br>      
+    		  <inputdivider> Stage 4: moving the plate to the target - Failure criteria</inputdivider>	
    		  <note>Trial fails for any of the following conditions:</note> 
       		  <note>If plate reaches target position and it is too tilted. </note> 
       		  <note>If plate reaches target position with acceptable tilt, but exits target region or becomes too titled before the "time in target for success"</note> 
