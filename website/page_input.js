@@ -124,6 +124,7 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
                 padding-left: 10px;
                 padding-right: 10px;
                 padding-bottom: 0px;
+		  border: 1px solid #90EE90;
       		} 
 	
 		.tabcontent label {
@@ -133,6 +134,7 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 
   		.tabcontent inputcolumn inputs {
     		 width: 70%;
+		  border: 1px solid #90EE90;
   		}
   
 		.tabcontent inputcolumn note {
