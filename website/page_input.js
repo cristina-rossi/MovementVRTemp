@@ -112,7 +112,7 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		.tabcontent name {
 		font-weight: bold;
   		display: inline-block;
-    		width: 300px;
+    		width: 40%;
                 padding-top: 15px;
                 padding-left: 10px;
                 padding-right: 10px;
@@ -128,6 +128,7 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
   		}
 
   		.tabcontent inputs {
+    		 width: 60%;
   		}
   
 		.tabcontent note {
