@@ -35,11 +35,11 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 			<name>Off-limits region size [meters]</name>
    			<inputs>
    			<label for="OFFLIMITS_SIZE_X">X:</label>
-			<input id="OFFLIMITS_SIZE_X" name="setupScript,tage2_offlimitsPositionX" type="number" value="2" />
+			<input id="OFFLIMITS_SIZE_X" name="setupScript,stage2_offlimitsPositionX" type="number" value="2" />
 			<label for="OFFLIMITS_SIZE_Y">Y:</label>
-			<input id="OFFLIMITS_SIZE_Y" name="setupScript,tage2_offlimitsPositionY" type="number" value="0.62" />
+			<input id="OFFLIMITS_SIZE_Y" name="setupScript,stage2_offlimitsPositionY" type="number" value="0.62" />
 			<label for="OFFLIMITS_SIZE_Z">Z:</label>
-			<input id="OFFLIMITS_SIZE_Z" name="setupScript,tage2_offlimitsPositionZ" type="number" value="2" />
+			<input id="OFFLIMITS_SIZE_Z" name="setupScript,stage2_offlimitsPositionZ" type="number" value="2" />
    			</inputs>     
 			<name>Time (outside of region)... [seconds]</name>
    			<inputs>
@@ -118,25 +118,32 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 			<input id="TIME_IN_TARGET" name="plateScript,timeInTargetForSuccess" type="number" value="0.01" />
 			</inputs>
 		    </div>
+	 
+		  <name>Failure criteria:</name><br>      
+   		  <note>Trial fails for any of the following conditions:</note> 
+      		  <note>If plate reaches target position and it is too tilted. </note> 
+      		  <note>If plate reaches target position with acceptable tilt, but exits target region or becomes too titled before the "time in target for success"</note> 
+      		  <note>If plate reaches target position with acceptable tilt, but exits target region or becomes too titled before the "time in target for success"</note> 	  
+      		  <note>If plate exits the game area (falls/thrown...):</note> 
     
-		  <div class="form-control">        
-			<name>Off-limits region center [meters]</name>
+    		    <div class="form-control">        
+			<name>Game area center [meters]</name>
    			<inputs>
-   			<label for="OFFLIMITS_POS_X">X:</label>
-			<input id="OFFLIMITS_POS_X" name="setupScript,stage2_offlimitsPositionX" type="number" value="0" />
-			<label for="OFFLIMITS_POS_Y">Y:</label>
-			<input id="OFFLIMITS_POS_Y" name="setupScript,stage2_offlimitsPositionY" type="number" value="0" />
-			<label for="OFFLIMITS_POS_Z">Z:</label>
-			<input id="OFFLIMITS_POS_Z" name="setupScript,stage2_offlimitsPositionZ" type="number" value="0.4" />
+   			<label for="GAMEAREA_POS_X">X:</label>
+			<input id="GAMEAREA_POS_X" name="setupScript,gameareaPositionX" type="number" value="0" />
+			<label for="GAMEAREA_POS_Y">Y:</label>
+			<input id="GAMEAREA_POS_Y" name="setupScript,gameareaPositionY" type="number" value="0" />
+			<label for="GAMEAREA_POS_Z">Z:</label>
+			<input id="GAMEAREA_POS_Z" name="setupScript,gameareaPositionZ" type="number" value="0.4" />
    			</inputs>       
-			<name>Off-limits region size [meters]</name>
+			<name>Game area size [meters]</name>
    			<inputs>
-   			<label for="OFFLIMITS_SIZE_X">X:</label>
-			<input id="OFFLIMITS_SIZE_X" name="setupScript,tage2_offlimitsPositionX" type="number" value="2" />
-			<label for="OFFLIMITS_SIZE_Y">Y:</label>
-			<input id="OFFLIMITS_SIZE_Y" name="setupScript,tage2_offlimitsPositionY" type="number" value="0.62" />
-			<label for="OFFLIMITS_SIZE_Z">Z:</label>
-			<input id="OFFLIMITS_SIZE_Z" name="setupScript,tage2_offlimitsPositionZ" type="number" value="2" />
+   			<label for="GAMEAREA_SIZE_X">X:</label>
+			<input id="GAMEAREA_SIZE_X" name="setupScript,gameareaSizeX" type="number" value="1" />
+			<label for="GAMEAREA_SIZE_Y">Y:</label>
+			<input id="GAMEAREA_SIZE_Y" name="setupScript,gameareaSizeX" type="number" value="1" />
+			<label for="GAMEAREA_SIZE_Z">Z:</label>
+			<input id="GAMEAREA_SIZE_Z" name="setupScript,gameareaSizeX" type="number" value="1" />
    			</inputs>     
 			<name>Time (outside of region)... [seconds]</name>
    			<inputs>
