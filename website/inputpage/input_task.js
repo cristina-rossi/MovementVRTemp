@@ -65,36 +65,59 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
      
   		<!-- Stage 4 -->
     		  <inputdivider> Stage 4: moving the plate to the target </inputdivider>	
-		  <name>Success criteria:</name><br>
+		  <name>Success criteria:</name><br>      
+   		  <note>For a success, plate must reach "target position":</note> 
       
      		    <!-- target position (wrt headset eye center)  -->
 		    <div class="form-control">        <!-- numbers  -->
+			<name>Target position [meters]</name>
+   			<inputs>
 			<label for="TARGET_X">X:</label>
 			<input id="TARGET_X" name="setupScript,targetPositionX" type="number" value="0" />
 			<label for="TARGET_Y">Y:</label>
 			<input id="TARGET_Y" name="setupScript,targetPositionY" type="number" value="0" />
 			<label for="TARGET_Z">Z:</label>
 			<input id="TARGET_Z" name="setupScript,targetPositionZ" type="number" value="0.4" />
+   			</inputs>
 		    </div>
       
+   		    <note>Specifically, the distance between plate center and target position must be less than "target size":</note> 
      		    <!-- target collider size  -->
-		    <div class="form-control">        <!-- numbers  -->
+		    <div class="form-control">        <!-- numbers  -->     
+			<name>Target size [meters]</name>
+   			<inputs> 
 			<label for="TARGETSIZE_X">X:</label>
 			<input id="TARGETSIZE_X" name="setupScript,targetColliderSizeX" type="number" value="0.1" />
 			<label for="TARGETSIZE_Y">Y:</label>
 			<input id="TARGETSIZE_Y" name="setupScript,targetColliderSizeY" type="number" value="0.1" />
 			<label for="TARGETSIZE_Z">Z:</label>
 			<input id="TARGETSIZE_Z" name="setupScript,targetColliderSizeZ" type="number" value="0.1" />   
+   			</inputs>
 		    </div>
       
-     		    <!-- max plate tilt for success (deg), in Z -->
+      
+   		    <note>The plate tilt/rotation must also be less than:</note> 
+     		    <!-- max plate tilt for success -->
 		    <div class="form-control">        <!-- numbers  -->
-			<strong>Max plate tilt at target [deg] &ensp </strong>
-			<label for="MAXTILT_Z">Z:</label>
-			<input id="MAXTILT_Z" name="plateScript,maxTiltForSuccess" type="number" value="10" />
+			<name>Max plate tilt at target [deg]</name>
+   			<inputs> 
+			<label for="MAXTILT_X">X (front-back):</label>
+			<input id="MAXTILT_X" name="plateScript,maxTiltForSuccessX" type="number" value="180" />
+			<label for="MAXTILT_Y">Y (flat rotation):</label>
+			<input id="MAXTILT_Y" name="plateScript,maxTiltForSuccessY" type="number" value="180" />
+			<label for="MAXTILT_Z">Z (left-right):</label>
+			<input id="MAXTILT_Z" name="plateScript,maxTiltForSuccessZ" type="number" value="10" />
+   			</inputs>
 		    </div>
       
-
+   		    <note>For a success, these conditions must remain true for:</note> 
+		    <div class="form-control">    
+			<name>Time in target for success [seconds]</name>
+			<inputs>
+			<label for="TIME_IN_TARGET"></label>
+			<input id="TIME_IN_TARGET" name="plateScript,timeInTargetForSuccess" type="number" value="0.01" />
+			</inputs>
+		    </div>
     
 		  <div class="form-control">        
 			<name>Off-limits region center [meters]</name>
