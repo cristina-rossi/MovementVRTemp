@@ -82,7 +82,7 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		  font-size: 15px; /* this is the font size for the non-input text within the form tabs */ 
 		  line-height: 0.75;
     		  text-align: left;
-		  width: 1300px
+		  width: 100%
 		}
   
 		.tabcontent inputcolumn{
