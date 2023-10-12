@@ -145,7 +145,8 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		input  { 
 		  	font-family: Arial;
 			font-size: 15px; 
-   			width: 100px;
+   			width: 60px;
+      			padding-right:10px;
 		}
 		
 		/* Style for form "textarea" inputs - inputed by users */
