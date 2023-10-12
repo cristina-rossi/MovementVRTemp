@@ -3,6 +3,53 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
     
 		<form>
 
+		<inputcolumn>
+  
+  		<!-- Stage 0 -->
+    		  <inputdivider> Stage 0: between trials </inputdivider>
+		  <div class="form-control">        
+			<name>Time between trials [seconds]:</name>
+   			<inputs>
+   			<label for="STAGE0_TIME"></label>
+			<input id="STAGE0_TIME" name="trialScript,stage0_baseDelay" type="number" value="0.35" />
+   			</inputs>      
+		   </div>
+     
+  		<!-- Stage 1 -->
+    		  <inputdivider> Stage 1: "place hands in hand-target" phase </inputdivider>
+   		  <note>Only present in selected trials - defined in "Phases" tab </note> 
+    		
+  		<!-- Stage 2 -->
+    		  <inputdivider> Stage 2: reposition hands </inputdivider>
+   		  <note>No plate yet. Waits for hands to outside of off-limits region (where plate will appear) to proceed.</note> 
+		  <div class="form-control">        
+			<name>Off-limits region center [meters]</name>
+   			<inputs>
+   			<label for="OFFLIMITS_POS_X">X:</label>
+			<input id="OFFLIMITS_POS_X" name="setupScript,stage2_offlimitsPositionX" type="number" value="0" />
+			<label for="OFFLIMITS_POS_Y">Y:</label>
+			<input id="OFFLIMITS_POS_Y" name="setupScript,stage2_offlimitsPositionY" type="number" value="0" />
+			<label for="OFFLIMITS_POS_Z">Z:</label>
+			<input id="OFFLIMITS_POS_Z" name="setupScript,stage2_offlimitsPositionZ" type="number" value="0.4" />
+   			</inputs>       
+			<name>Off-limits region size [meters]</name>
+   			<inputs>
+   			<label for="OFFLIMITS_SIZE_X">X:</label>
+			<input id="OFFLIMITS_SIZE_X" name="setupScript,tage2_offlimitsPositionX" type="number" value="2" />
+			<label for="OFFLIMITS_SIZE_Y">Y:</label>
+			<input id="OFFLIMITS_SIZE_Y" name="setupScript,tage2_offlimitsPositionY" type="number" value="0.62" />
+			<label for="OFFLIMITS_SIZE_Z">Z:</label>
+			<input id="OFFLIMITS_SIZE_Z" name="setupScript,tage2_offlimitsPositionZ" type="number" value="2" />
+   			</inputs>     
+			<name>Time (outside of region)... [seconds]</name>
+   			<inputs>
+   			<label for="OFFLIMITS_TIME_ACTIVATEPLATE">to activate plate (invisible):</label>
+			<input id="OFFLIMITS_TIME_ACTIVATEPLATE" name="trialScript,stage2_handsRepositionedActivateTime" type="number" value="2" />
+   			<label for="OFFLIMITS_TIME_TOT">to proceed to next stage:</label>
+			<input id="OFFLIMITS_TIME_TOT" name="trialScript,stage2_handsRepositionedTotalTime" type="number" value="2" />
+   			</inputs>
+		   </div>
+  
      		    <!-- SPATIAL VARIABLES -->
      		    <!-- plate position (wrt headset eye level) -->
       
@@ -22,22 +69,6 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
       
 		    </div>
       
-		    <div class="form-control">        <!-- numbers  -->
-			<name>Plate PositionPositionPositionPositionPosition [meters]</name>
-   			<inputs>
-   			<label for="PLATE_X">X:</label>
-			<input id="PLATE_X" name="setupScript,platePositionX" type="number" value="0" />
-			<label for="PLATE_Y">Y:</label>
-			<input id="PLATE_Y" name="setupScript,platePositionY" type="number" value="-0.3" />
-			<label for="PLATE_Z">Z:</label>
-			<input id="PLATE_Z" name="setupScript,platePositionZ" type="number" value="0.4" />
-
-   			</inputs>
-   
-   			<note>(a wrt headset position - eye level)</note> 
-      
-		    </div>
-
       
      		    <!-- target position (wrt plate start position)  -->
 		    <div class="form-control">        <!-- numbers  -->
