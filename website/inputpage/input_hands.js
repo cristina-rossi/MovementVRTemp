@@ -24,6 +24,15 @@ document.querySelector('#INPUT_HANDS').insertAdjacentHTML('beforeend', `
 			<input id="ACTIVE_R_H" name="handsAndSaveScript,rightHandActiveFlag" type="hidden" value="FALSE">
 			<input id="ACTIVE_R" name="handsAndSaveScript,rightHandActiveFlag" type="checkbox" value="TRUE" checked>	
 			<label for="ACTIVE_R">Right</label>	  
+   			</inputs>             
+			<name>Pause game if not tracked:</name>
+   			<inputs>	    	  	    
+			<input id="TRACKED_L_H" name="handsAndSaveScript,leftHandTrackingFlag" type="hidden" value="FALSE">
+			<input id="TRACKED_L" name="handsAndSaveScript,leftHandTrackingFlag" type="checkbox" value="TRUE" checked>	
+			<label for="TRACKED_L">Left</label>	
+			<input id="TRACKEDE_R_H" name="handsAndSaveScript,rightHandTrackingFlag" type="hidden" value="FALSE">
+			<input id="TRACKED_R" name="handsAndSaveScript,rightHandTrackingFlag" type="checkbox" value="TRUE" checked>	
+			<label for="TRACKED_R">Right</label>	  
    			</inputs>   
 		   </div>
      
