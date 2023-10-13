@@ -66,9 +66,10 @@ The end
 
 
 	<!-- Position hands in hand-target -->
-	  <inputdivider> "Position hands in hand-target" phase </inputdivider>
+	  <inputdivider> "Position hands in hand-target" phase parameters </inputdivider>
 	  <div class="form-control">  
-   			<note>asks participant to place hands within target hand-meshes to start trial</note>           
+   			<note>Asks participant to place hands within target hand-meshes to start trial.</note>    
+   			<note>Trial proceeds once the selected hands have collided with respective hand-targets:</note>
 			<name>Run phase with hand-targets:</name>
    			<inputs>		    
 			<input id="LHANDTARGET_FLAG_H" name="trialScript,stage1_leftOriginFlag" type="hidden" value="FALSE">
@@ -96,8 +97,25 @@ The end
 			<input id="RHANDTARGET_POS_Y" name="setupScript,rightOriginLocalPositionY" type="number" value="-0.35" />
 			<label for="RHANDTARGET_POS_Z">Z:</label>
 			<input id="RHANDTARGET_POS_Z" name="setupScript,rightOriginLocalPositionZ" type="number" value="0.4" />
-   			</inputs> 
-      
+   			</inputs>       
+   			<note>Specifically, the distance between any hand bone and the hand-target position must be less than "hand-target size" (radius):</note>             
+			<name>Hand-target size - radius [meters]:</name>
+   			<inputs>
+   			<label for="LHANDTARGET_SIZE">Left:</label>
+			<input id="LHANDTARGET_SIZE" name="setupScript,leftOriginColliderRadius" type="number" value="0.1" />
+   			<label for="RHANDTARGET_SIZE">Right:</label>
+			<input id="RHANDTARGET_SIZE" name="setupScript,rightOriginColliderRadius" type="number" value="0.1" />
+   			</inputs>     
+   			<note>The condition(s) must remain true for:</note>  
+			<name>Time in hand-targets to proceed [seconds]</name>
+			<inputs>
+			<label for="TIME_IN_HTARGET"></label>
+			<input id="TIME_IN_HTARGET" name="setupScript,handsInOriginTimeDelay" type="number" value="1" />
+			</inputs>  
+	  </div>
+	<!-- Position hands in hand-target -->
+	  <inputdivider> "Position hands in hand-target" message </inputdivider>
+	  <div class="form-control">  
  			<name>Message shown:</name>
    			<inputs>      
 			<label for="HANDTARGET_MSG"></label>
