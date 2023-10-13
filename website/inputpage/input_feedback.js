@@ -64,22 +64,22 @@ document.querySelector('#INPUT_FEEDBACK').insertAdjacentHTML('beforeend', `
 			<name>Plate too tilted:</name>
    			<inputs>      
 			<label for="FAIL1"></label>
-			<textarea id="FAIL1" name="messagesScript,failText1" rows="1" cols="150"></textarea>
+			<textarea id="FAIL1" name="messagesScript,failText1" rows="1" cols="50"></textarea>
    			</inputs>      
 			<name>Plate overshot or moved away from target:</name>
    			<inputs>      
 			<label for="FAIL2"></label>
-			<textarea id="FAIL2" name="messagesScript,failText2" rows="1" cols="150" value="no throwing"></textarea>
+			<textarea id="FAIL2" name="messagesScript,failText2" rows="1" cols="50" value="no throwing"></textarea>
    			</inputs>              
 			<name>Plate fell:</name>
    			<inputs>      
 			<label for="FAIL3"></label>
-			<textarea id="FAIL3" name="messagesScript,failText3" rows="1" cols="150"></textarea>
+			<textarea id="FAIL3" name="messagesScript,failText3" rows="1" cols="50"></textarea>
    			</inputs>          
 			<name>Time limit reached:</name>
    			<inputs>      
 			<label for="FAIL4"></label>
-			<textarea id="FAIL4" name="messagesScript,failText4" rows="1" cols="150" value="too slow"></textarea>
+			<textarea id="FAIL4" name="messagesScript,failText4" rows="1" cols="50" value="too slow"></textarea>
    			</inputs>    
               
 			<name>Message position [meters]:</name>
