@@ -89,6 +89,44 @@ document.querySelector('#INPUT_GAMEOBJECTS').insertAdjacentHTML('beforeend', `
 			<label for="GRAPE_HANDS_IGNORE"></label>	
    			</inputs>    			
 		   </div>
+
+
+     
+     	<!-- Target mesh -->
+    		  <inputdivider> Target Mesh (visual cylindrical mesh in front of bird) </inputdivider>
+		  <div class="form-control">     
+			<name>Mesh position offset [meters]:</name>
+   			<inputs>
+   			<label for="TARGETMESH_OFFSET_X">X:</label>
+			<input id="TARGETMESH_OFFSET_X" name="setupScript,targetMeshLocalPositionX" type="number" value="0" />
+			<label for="TARGETMESH_OFFSET_Y">Y:</label>
+			<input id="TARGETMESH_OFFSET_Y" name="setupScript,targetMeshLocalPositionY" type="number" value="0" />
+			<label for="TARGETMESH_OFFSET_Z">Z:</label>
+			<input id="TARGETMESH_OFFSET_Z" name="setupScript,targetMeshLocalPositionZ" type="number" value="0" />
+   			</inputs>   
+   		  	<note>Offset of the visual mesh wrt to actual target position (that set in Task tab)</note>      
+			<name>Mesh size [meters]:</name>
+   			<inputs>
+   			<label for="TARGETMESH_SIZE_X">X:</label>
+			<input id="TARGETMESH_SIZE_X" name="setupScript,targetMeshSizeX" type="number" value="0.2" />
+			<label for="TARGETMESH_SIZE_Y">Y:</label>
+			<input id="TARGETMESH_SIZE_Y" name="setupScript,targetMeshSizeY" type="number" value="0.005" />
+			<label for="TARGETMESH_SIZE_Z">Z:</label>
+			<input id="TARGETMESH_SIZE_Z" name="setupScript,targetMeshSizeZ" type="number" value="0.2" />
+   			</inputs>    		
+		   </div>
+
+	<!-- Bird sounds -->
+    		  <inputdivider> Environment birds (not target bird) </inputdivider>
+		  <div class="form-control">     
+			<name>Sound volume [0 to 1]:</name>
+   			<inputs>
+   			<label for="CHIRP_VOL">Chirp:</label>
+			<input id="CHIRP_VOL" name="setupScript,backgroundBirdChirpVolume" type="number" value="0.1" />
+			<label for="WINGS_VOL">Wings:</label>
+			<input id="WINGS_VOL" name="setupScript,backgroundBirdFlyawayVolume" type="number" value="0.1" />
+   			</inputs>    		
+		   </div>
   	
 	</inputcolumn> 
 	<figurecolumn>
