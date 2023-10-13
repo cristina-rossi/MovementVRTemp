@@ -98,6 +98,7 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		  border: 1px solid #20B2AA;
         	  vertical-align: middle;
 	  	  height: 100%;
+       		  vertical-align:top; 
 		}
   
 		.tabcontent inputcolumn inputdivider{
