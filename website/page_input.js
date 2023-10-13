@@ -83,11 +83,15 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
     		  text-align: left;
 		  width: 100%
         	  vertical-align: top;
+	   	  padding: 0px;
+       		  margin: 0px;
 		}
   
 		.tabcontent inputcolumn{
   		  display: inline-block;
     		  width: 69%;
+	   	  padding: 0px;
+       		  margin: 0px;
 		  border: 1px solid #90EE90;
 		}
   
@@ -98,6 +102,8 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
         	  vertical-align: middle;
 	  	  height: 100%;
        		  vertical-align:top; 
+	   	  padding: 0px;
+       		  margin: 0px;
 		}
   
 		.tabcontent inputcolumn inputdivider{
