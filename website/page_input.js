@@ -127,6 +127,12 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		  border: 1px solid #90EE90;
       		} 
 	
+  		.tabcontent inputcolumn inputs {
+  		 display: inline-block;
+    		 width: 60%;
+		 border: 1px solid #90EE90;    
+  		}
+	
 		.tabcontent inputcolumn name:before
 		{
 		    content: "";
@@ -139,12 +145,6 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
       		  padding-left:10px;
   		}
 
-  		.tabcontent inputcolumn inputs {
-  		display: inline-block;
-    		 width: 50%;
-		  border: 1px solid #90EE90;
-    
-  		}
   
 		.tabcontent inputcolumn note {
 		font-size: 90%;
