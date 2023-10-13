@@ -58,7 +58,17 @@ document.querySelector('#INPUT_HANDS').insertAdjacentHTML('beforeend', `
 			<label for="R_GAIN_Z">Z:</label>
 			<input id="R_GAIN_Z" name="trialScript,stage4_rightHandGainZ" type="number" value="0" />
    			</inputs> 
-   		        <note>-100% means hand will not move at all, 100% means not perturbed, 200% means it will move twice as fast</note>   
+   		        <note>-100% means hand will not move at all, 100% means not perturbed, 200% means it will move twice as fast</note>              
+   		        <note>Hand gain will be applied wrt to "hand origin" position (no shift when hand is at 0,0,0).</note>           
+   		        <note>"Hand origin" position is the position where hand makes contact with plate,</note>        
+   		        <note>Computed as the median of selected (e.g., baseline) trials:</note>   
+			<name>Trials to compute gain origin:</name>
+   			<inputs>
+   			<label for="GAIN_TRIAL_I">From trial:</label>
+			<input id="GAIN_TRIAL_I" name="trialScript,stage4_handOriginMedianInitialTrial" type="number" value="1" />
+   			<label for="GAIN_TRIAL_F">To trial:</label>
+			<input id="GAIN_TRIAL_F" name="trialScript,stage4_handOriginMedianFinalTrial" type="number" value="50" />
+   			</inputs>   
       
 			<name>Off-limits region size [meters]</name>
    			<inputs>
