@@ -1,4 +1,4 @@
-document.querySelector('#INPUT_GAMEOBJECTS').insertAdjacentHTML('beforeend', `                                 
+document.querySelector('#INPUT_BETWEENTRIALS').insertAdjacentHTML('beforeend', `                                 
 
     
 	<form>
