@@ -61,53 +61,26 @@ document.querySelector('#INPUT_FEEDBACK').insertAdjacentHTML('beforeend', `
   		<!-- message -->
     		  <inputdivider> Message displayed after failure trials </inputdivider>
 		  <div class="form-control">        
-			<name>Target mesh success color:</name>
-   			<inputs>
-   			<label for="TARGET_COLOR_S_R">R:</label>
-			<input id="TARGET_COLOR_S_R" name="plateScript,targetMeshColorSuccessR" type="number" value="0" />
-   			<label for="TARGET_COLOR_S_G">G:</label>
-			<input id="TARGET_COLOR_S_G" name="plateScript,targetMeshColorSuccessG" type="number" value="0.75" />
-   			<label for="TARGET_COLOR_S_B">B:</label>
-			<input id="TARGET_COLOR_S_B" name="plateScript,targetMeshColorSuccessB" type="number" value="0.4" />
-   			<label for="TARGET_COLOR_S_A">Alpha:</label>
-			<input id="TARGET_COLOR_S_A" name="plateScript,targetMeshColorSuccessAlpha" type="number" value="0.5" />
-   			</inputs>            
-			<name>Target mesh failure color:</name>
-   			<inputs>
-   			<label for="TARGET_COLOR_U_R">R:</label>
-			<input id="TARGET_COLOR_U_R" name="plateScript,targetMeshColorUnsuccessR" type="number" value="1" />
-   			<label for="TARGET_COLOR_U_G">G:</label>
-			<input id="TARGET_COLOR_U_G" name="plateScript,targetMeshColorUnsuccessG" type="number" value="0" />
-   			<label for="TARGET_COLOR_U_B">B:</label>
-			<input id="TARGET_COLOR_U_B" name="plateScript,targetMeshColorUnsuccessB" type="number" value="0" />
-   			<label for="TARGET_COLOR_U_A">Alpha:</label>
-			<input id="TARGET_COLOR_U_A" name="plateScript,targetMeshColorUnsuccessAlpha" type="number" value="0.5" />
-   			</inputs>    
-   		        <note>Target color changes online based on success criteria</note>   
-      
-			<name>Particle effect success color:</name>
-   			<inputs>
-   			<label for="EFFECT_COLOR_S_R">R:</label>
-			<input id="EFFECT_COLOR_S_R" name="plateAndGrapeScript,plateGrapeColorSuccessR" type="number" value="0" />
-   			<label for="EFFECT_COLOR_S_G">G:</label>
-			<input id="EFFECT_COLOR_S_G" name="plateAndGrapeScript,plateGrapeColorSuccessG" type="number" value="0.75" />
-   			<label for="EFFECT_COLOR_S_B">B:</label>
-			<input id="EFFECT_COLOR_S_B" name="plateAndGrapeScript,plateGrapeColorSuccessB" type="number" value="0.4" />
-   			<label for="EFFECT_COLOR_S_A">Alpha:</label>
-			<input id="EFFECT_COLOR_S_A" name="plateAndGrapeScript,plateGrapeColorSuccessAlpha" type="number" value="0.5" />
-   			</inputs>            
-			<name>Particle effect failure color:</name>
-   			<inputs>
-   			<label for="EFFECT_COLOR_U_R">R:</label>
-			<input id="EFFECT_COLOR_U_R" name="plateAndGrapeScript,plateGrapeColorUnsuccessR" type="number" value="1" />
-   			<label for="EFFECT_COLOR_U_G">G:</label>
-			<input id="EFFECT_COLOR_U_G" name="plateAndGrapeScript,plateGrapeColorUnsuccessG" type="number" value="0" />
-   			<label for="EFFECT_COLOR_U_B">B:</label>
-			<input id="EFFECT_COLOR_U_B" name="plateAndGrapeScript,plateGrapeColorUnsuccessB" type="number" value="0" />
-   			<label for="EFFECT_COLOR_U_A">Alpha:</label>
-			<input id="EFFECT_COLOR_U_A" name="plateAndGrapeScript,plateGrapeColorUnsuccessAlpha" type="number" value="0.5" />
-   			</inputs>    
-   		        <note>Particle effect appears on plate upon trial change</note>    
+			<name>Plate too tilted:</name>
+   			<inputs>      
+			<label for="FAIL1"></label>
+			<textarea id="FAIL1" name="messagesScript,failText1" rows="1" cols="150"></textarea>
+   			</inputs>      
+			<name>Plate overshot or moved away from target:</name>
+   			<inputs>      
+			<label for="FAIL2"></label>
+			<textarea id="FAIL2" name="messagesScript,failText2" rows="1" cols="150" value="no throwing"></textarea>
+   			</inputs>              
+			<name>Plate fell:</name>
+   			<inputs>      
+			<label for="FAIL3"></label>
+			<textarea id="FAIL3" name="messagesScript,failText3" rows="1" cols="150"></textarea>
+   			</inputs>          
+			<name>Time limit reached:</name>
+   			<inputs>      
+			<label for="FAIL4"></label>
+			<textarea id="FAIL4" name="messagesScript,failText4" rows="1" cols="150" value="too slow"></textarea>
+   			</inputs>      
 		   </div>
      
      
