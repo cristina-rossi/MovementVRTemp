@@ -129,7 +129,7 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 	
   		.tabcontent inputcolumn inputs {
   		 display: inline-block;
-    		 width: 60%;
+    		 width: 65%;
 		 border: 1px solid #90EE90;    
   		}
 	
