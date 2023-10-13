@@ -75,7 +75,6 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		/* Style the tab content - outside of the user inputs */
 		.tabcontent {
 		  display: none;
-		  padding: 6px 12px;
 		  border: 1px solid #ccc;
 		  border-top: none;
 		  font-family: Arial;
