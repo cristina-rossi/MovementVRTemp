@@ -25,7 +25,7 @@ document.querySelector('#INPUT_HANDS').insertAdjacentHTML('beforeend', `
 			<input id="ACTIVE_R" name="handsAndSaveScript,rightHandActiveFlag" type="checkbox" value="TRUE" checked>	
 			<label for="ACTIVE_R">Right</label>	  
    			</inputs>             
-			<name>Pause game if not tracked:</name>
+			<name>Required to be tracked:</name>
    			<inputs>	    	  	    
 			<input id="TRACKED_L_H" name="handsAndSaveScript,leftHandTrackingFlag" type="hidden" value="FALSE">
 			<input id="TRACKED_L" name="handsAndSaveScript,leftHandTrackingFlag" type="checkbox" value="TRUE" checked>	
@@ -33,26 +33,33 @@ document.querySelector('#INPUT_HANDS').insertAdjacentHTML('beforeend', `
 			<input id="TRACKEDE_R_H" name="handsAndSaveScript,rightHandTrackingFlag" type="hidden" value="FALSE">
 			<input id="TRACKED_R" name="handsAndSaveScript,rightHandTrackingFlag" type="checkbox" value="TRUE" checked>	
 			<label for="TRACKED_R">Right</label>	  
-   			</inputs>   
+   			</inputs> 
+   		        <note>Plate freezes if checked hands are not tracked by cameras</note>   
 		   </div>
-     
-  		<!-- Stage 1 -->
-    		  <inputdivider> Stage 1: "place hands in hand-target" phase </inputdivider>
-   		  <note>Only present in selected trials - defined in "Phases" tab </note> 
-    		
-  		<!-- Stage 2 -->
-    		  <inputdivider> Stage 2: reposition hands to enable plate </inputdivider>
+         		
+  		<!-- adaptation gain -->
+    		  <inputdivider> Hand perturbation </inputdivider>
 		  <div class="form-control">           
-   		  	<note>No plate yet. Waits for hands to outside of off-limits region: </note> 
-			<name>Off-limits region center [meters]</name>
+			<name>Left hand gain [%]</name>
    			<inputs>
-   			<label for="OFFLIMITS_POS_X">X:</label>
-			<input id="OFFLIMITS_POS_X" name="setupScript,stage2_offlimitsPositionX" type="number" value="0" />
-			<label for="OFFLIMITS_POS_Y">Y:</label>
-			<input id="OFFLIMITS_POS_Y" name="setupScript,stage2_offlimitsPositionY" type="number" value="0" />
-			<label for="OFFLIMITS_POS_Z">Z:</label>
-			<input id="OFFLIMITS_POS_Z" name="setupScript,stage2_offlimitsPositionZ" type="number" value="0.4" />
-   			</inputs>       
+   			<label for="L_GAIN_X">X:</label>
+			<input id="L_GAIN_X" name="trialScript,stage4_leftHandGainX" type="number" value="0" />
+			<label for="L_GAIN_Y">Y:</label>
+			<input id="L_GAIN_Y" name="trialScript,stage4_leftHandGainY" type="number" value="0" />
+			<label for="L_GAIN_Z">Z:</label>
+			<input id="L_GAIN_Z" name="trialScript,stage4_leftHandGainZ" type="number" value="0" />
+   			</inputs>      
+			<name>Right hand gain [%]</name>
+   			<inputs>
+   			<label for="R_GAIN_X">X:</label>
+			<input id="R_GAIN_X" name="trialScript,stage4_rightHandGainX" type="number" value="0" />
+			<label for="R_GAIN_Y">Y:</label>
+			<input id="R_GAIN_Y" name="trialScript,stage4_rightHandGainY" type="number" value="0" />
+			<label for="R_GAIN_Z">Z:</label>
+			<input id="R_GAIN_Z" name="trialScript,stage4_rightHandGainZ" type="number" value="0" />
+   			</inputs> 
+   		        <note>-100% means hand will not move at all, 100% means not perturbed, 200% means it will move twice as fast</note>   
+      
 			<name>Off-limits region size [meters]</name>
    			<inputs>
    			<label for="OFFLIMITS_SIZE_X">X:</label>
