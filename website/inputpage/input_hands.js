@@ -79,10 +79,16 @@ document.querySelector('#INPUT_HANDS').insertAdjacentHTML('beforeend', `
    			<inputs>	    	  	    
 			<input id="SAVE_PERTURBATION" name="handsAndSaveScript,savePerturbationOffset" type="hidden" value="FALSE">
 			<input id="SAVE_PERTURBATION" name="handsAndSaveScript,savePerturbationOffset" type="checkbox" value="TRUE" checked>	
-			<label for="SAVE_PERTURBATION">Hand perturbation offsets</label>	
+			<label for="SAVE_PERTURBATION">Hand perturbation offsets</label>	  
+   			</inputs>       
+			<name></name>
+   			<inputs>	
 			<input id="SAVE_TRANSFORM" name="handsAndSaveScript,saveBoneTransforms" type="hidden" value="FALSE">
 			<input id="SAVE_TRANSFORM" name="handsAndSaveScript,saveBoneTransforms" type="checkbox" value="TRUE" checked>	
-			<label for="SAVE_TRANSFORM">All bone transforms</label>	  	
+			<label for="SAVE_TRANSFORM">All bone transforms</label>	    
+   			</inputs>       
+			<name></name>
+   			<inputs>		
 			<input id="SAVE_COLLIDER" name="handsAndSaveScript,saveBoneColliderShapes" type="hidden" value="FALSE">
 			<input id="SAVE_COLLIDER" name="handsAndSaveScript,saveBoneColliderShapes" type="checkbox" value="TRUE" checked>	
 			<label for="SAVE_COLLIDER">All bone shapes</label>	  
