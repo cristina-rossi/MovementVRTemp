@@ -44,6 +44,45 @@ document.querySelector('#INPUT_GAMEOBJECTS').insertAdjacentHTML('beforeend', `
    			</inputs>   
 		   </div>
  		
+ 		  <inputdivider> Trial number display </inputdivider>
+		  <div class="form-control">          
+			<name></name>
+   			<inputs>	    
+			<input id="TRIALN_FLAG_H" name="setupScript,trialNumberFlag" type="hidden" value="FALSE">
+			<input id="TRIALN_FLAG" name="setupScript,trialNumberFlag" type="checkbox" value="TRUE" checked>
+			<label for="TRIALN_FLAG">Display trial number</label>		
+			</inputs>    
+			<name>Pre-number string:</name>
+   			<inputs>      
+			<label for="TRIALN_TEXT"></label>
+			<textarea id="TRIALN_TEXT" name="messagesScript,trialNumberText" rows="2" cols="50">Trial:</textarea>
+   			</inputs>  
+			<name>Position [meters]:</name>
+   			<inputs>
+   			<label for="TRIALN_POS_X">X:</label>
+			<input id="TRIALN_POS_X" name="setupScript,trialNumberMessageLocalPositionX" type="number" value="-0.8" />
+			<label for="TRIALN_POS_Y">Y:</label>
+			<input id="TRIALN_POS_Y" name="setupScript,trialNumberMessageLocalPositionY" type="number" value="0.4" />
+			<label for="TRIALN_POS_Z">Z:</label>
+			<input id="TRIALN_POS_Z" name="setupScript,trialNumberMessageLocalPositionZ" type="number" value="1.1" />
+   			</inputs>  
+			<name>Font size:</name>
+   			<inputs>
+   			<label for="TRIALN_FONT"></label>
+			<input id="TRIALN_FONT" name="setupScript,trialNumberMessageTextSize" type="number" value="40" />
+   			</inputs>   
+		   </div>
+
+
+		  <inputdivider> Bird at target </inputdivider>
+		  <div class="form-control">          
+			<name></name>
+   			<inputs>	    
+			<input id="CHANGETARGETBIRD_FLAG_H" name="trialScript,stage0_changeBird" type="hidden" value="FALSE">
+			<input id="CHANGETARGETBIRD_FLAG" name="trialScript,stage0_changeBird" type="checkbox" value="TRUE" checked>
+			<label for="CHANGETARGETBIRD_FLAG">Change bird after trial</label>		
+			</inputs>    
+		   </div>
   
   	
 	</inputcolumn> 
