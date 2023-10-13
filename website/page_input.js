@@ -92,13 +92,11 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
     		  width: 69%;
 	   	  padding: 0px;
        		  margin: 0px;
-		  border: 1px solid #90EE90;
 		}
   
 		.tabcontent figurecolumn{
   		  display: inline-block;
     		  width: 29%;
-		  border: 1px solid #20B2AA;
         	  vertical-align: middle;
 	  	  height: 100%;
        		  vertical-align:top; 
@@ -131,14 +129,12 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
                 padding-right: 10px;
                 padding-bottom: 0px;
 		margin: 0px;
-		  border: 1px solid #90EE90;
       		} 
 	
   		.tabcontent inputcolumn inputs {
   		 display: inline-block;
     		 width: 65%;  
-		 margin: 0px;
-		 border: 1px solid #90EE90;    
+		 margin: 0px;  
   		}
 	
 		.tabcontent inputcolumn name:before
