@@ -125,7 +125,7 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 		.tabcontent inputcolumn name {
 		font-weight: bold;
   		display: inline-block;
-    		width: 29%;
+    		width: 30%;
                 padding-top: 15px;
                 padding-left: 10px;
                 padding-right: 10px;
@@ -136,7 +136,7 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
 	
   		.tabcontent inputcolumn inputs {
   		 display: inline-block;
-    		 width: 69%;  
+    		 width: 67%;  
 		 margin: 0px;
 		 border: 1px solid #90EE90;    
   		}
