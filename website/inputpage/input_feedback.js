@@ -66,13 +66,13 @@ document.querySelector('#INPUT_FEEDBACK').insertAdjacentHTML('beforeend', `
 			<label for="FAIL1"></label>
 			<textarea id="FAIL1" name="messagesScript,failText1" rows="2" cols="50"></textarea>
    			</inputs>      
-			<name>Plate overshot or moved away from target:</name>
+			<name>Plate overshot/left target:</name>
    			<inputs>      
 			<label for="FAIL2"></label>
-			<textarea id="FAIL2" name="messagesScript,failText2" rows="2" cols="50">
-		   	no
-		   	throwing
-		   	</textarea>
+<textarea id="FAIL2" name="messagesScript,failText2" rows="2" cols="50">
+no
+throwing
+</textarea>
    			</inputs>              
 			<name>Plate fell:</name>
    			<inputs>      
@@ -82,7 +82,10 @@ document.querySelector('#INPUT_FEEDBACK').insertAdjacentHTML('beforeend', `
 			<name>Time limit reached:</name>
    			<inputs>      
 			<label for="FAIL4"></label>
-			<textarea id="FAIL4" name="messagesScript,failText4" rows="2" cols="50" value="too slow"></textarea>
+<textarea id="FAIL4" name="messagesScript,failText4" rows="2" cols="50">
+too
+slow
+</textarea>
    			</inputs>    
               
 			<name>Message position [meters]:</name>
