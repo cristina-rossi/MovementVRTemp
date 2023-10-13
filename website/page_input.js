@@ -202,10 +202,26 @@ document.querySelector('#INPUT_PAGE').insertAdjacentHTML('beforeend', `
 		<button class="tablink" onclick="openTab('INPUT_HANDS',this)">
 			Hands
 		</button>
+		<button class="tablink" onclick="openTab('INPUT_FEEDBACK',this)">
+			Feedback
+		</button>
+		<button class="tablink" onclick="openTab('INPUT_GAMEOBJECTS',this)">
+			Game Objects
+		</button>
+		<button class="tablink" onclick="openTab('INPUT_BETWEENTRIALS',this)">
+			Between Trials
+		</button>
+		<button class="tablink" onclick="openTab('INPUT_PHASES',this)">
+			Phases
+		</button>
 	</div>
 
 	<div id="INPUT_TASK" class="tabcontent"></div>
 	<div id="INPUT_HANDS" class="tabcontent"></div>
+	<div id="INPUT_FEEDBACK" class="tabcontent"></div>
+	<div id="INPUT_GAMEOBJECTS" class="tabcontent"></div>
+	<div id="INPUT_BETWEENTRIALS" class="tabcontent"></div>
+	<div id="INPUT_PHASES" class="tabcontent"></div>
 
 
 	<br><br>
