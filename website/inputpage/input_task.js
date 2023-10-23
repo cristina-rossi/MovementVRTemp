@@ -1,12 +1,11 @@
 document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `                                 
 
     
-		<form>
-
-		<inputcolumn>
+		<form>		
   
   		<!-- Stage 0 -->
     		  <inputdivider> Stage 0: between trials </inputdivider>
+		  <inputcolumn>
 		  <div class="form-control">        
 			<name>Time between trials [seconds]:</name>
    			<inputs>
@@ -14,13 +13,17 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 			<input id="STAGE0_TIME" name="trialScript,stage0_baseDelay" type="number" value="0.35" />
    			</inputs>      
 		   </div>
+		   </inputcolumn> 
      
   		<!-- Stage 1 -->
     		  <inputdivider> Stage 1: "place hands in hand-target" phase </inputdivider>
+		  <inputcolumn>
    		  <note>Only present in selected trials - defined in "Phases" tab </note> 
+		  </inputcolumn> 
     		
   		<!-- Stage 2 -->
     		  <inputdivider> Stage 2: reposition hands to enable plate </inputdivider>
+		  <inputcolumn>
 		  <div class="form-control">           
    		  	<note>No plate yet. Waits for hands to outside of off-limits region: </note> 
 			<name>Off-limits region center [meters]</name>
@@ -53,6 +56,7 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 			<input id="OFFLIMITS_TIME_TOT" name="trialScript,stage2_handsRepositionedTotalTime" type="number" value="0.1" />
    			</inputs>
 		   </div>
+		   </inputcolumn> 
      
    		  <note>Plate appears at this position:</note> 
      		    <!-- plate position (wrt headset eye level) -->      
@@ -67,9 +71,15 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 			<input id="PLATE_Z" name="setupScript,platePositionZ" type="number" value="0.4" />
    			</inputs>
 		    </div>
+		   </inputcolumn> 
+	
+		   <figurecolumn>
+			<img src="website/inputpage/paradigmSmall-01.png"  style="width:100%">
+		   </figurecolumn>
      
   		<!-- Stage 3 -->
     		  <inputdivider> Stage 3: make contact with plate </inputdivider>
+		  <inputcolumn>
    		  <note>Plate active and visible - waits & detects contact between hands and plate.</note> 
    		  <note>Skips to next trial (failure) if nothing happens after time limit: </note> 
 		  <div class="form-control">        
@@ -79,10 +89,12 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 			<input id="STAGE3_TIME" name="trialScript,stage3_maxTime" type="number" value="30" />
    			</inputs>      
 		   </div>
+		   </inputcolumn> 
 
      
   		<!-- Stage 4 SUCCESS-->
     		  <inputdivider> Stage 4: moving the plate to the target - Success criteria</inputdivider>	
+		  <inputcolumn>
    		  <note>For a success, plate must reach "target position":</note> 
       
      		    <!-- target position (wrt headset eye center)  -->
@@ -135,8 +147,16 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 			<input id="TIME_IN_TARGET" name="plateScript,timeInTargetForSuccess" type="number" value="0.01" />
 			</inputs>
 		    </div>
+		   </inputcolumn> 
+	
+		   <figurecolumn>
+			<img src="website/inputpage/paradigmSmall-01.png"  style="width:100%">
+		   </figurecolumn>
+
+     
 	 
     		  <inputdivider> Stage 4: moving the plate to the target - Failure criteria</inputdivider>	
+		  <inputcolumn>
    		  <note>Trial fails for any of the following conditions:</note> 
       		  <note>If plate reaches target position and it is too tilted. </note> 
       		  <note>If plate reaches target position with acceptable tilt, but exits target region or becomes too titled before the "time in target for success"</note> 
@@ -179,12 +199,11 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
    			<label for="STAGE4_TIME"></label>
    			</inputs>      
 		   </div>
-
-
-	</inputcolumn> 
-	<figurecolumn>
-    		<img src="website/inputpage/paradigmSmall-01.png"  style="width:100%">
-	</figurecolumn>
+		   </inputcolumn> 
+	
+		   <figurecolumn>
+			<img src="website/inputpage/paradigmSmall-01.png"  style="width:100%">
+		   </figurecolumn>
 
  
 	</form>
