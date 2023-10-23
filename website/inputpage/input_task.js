@@ -56,7 +56,6 @@ document.querySelector('#INPUT_TASK').insertAdjacentHTML('beforeend', `
 			<input id="OFFLIMITS_TIME_TOT" name="trialScript,stage2_handsRepositionedTotalTime" type="number" value="0.1" />
    			</inputs>
 		   </div>
-		   </inputcolumn> 
      
    		  <note>Plate appears at this position:</note> 
      		    <!-- plate position (wrt headset eye level) -->      
