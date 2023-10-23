@@ -104,7 +104,7 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
        		  margin: 0px;
 		}
   
-		.tabcontent inputcolumn inputdivider{
+		.tabcontent inputdivider{
   		  display: block;
     		  width: 100%;
 		  background-color: #E0FFFF;   
